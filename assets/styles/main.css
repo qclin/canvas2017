@@ -1,0 +1,23 @@
+.homeCanvas{
+    width:2914px;
+    height:2543px;
+}
+.imageLink{
+
+}
+body{
+  font-family: 'Inconsolata', monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Merriweather', serif;
+}
+
+.about-me{
+  white-space: pre-line;
+  width: 400px;
+  margin: 2em;
+}
+.contact-email{
+  margin-left:2em;
+}
