@@ -10,14 +10,70 @@ html
     link(href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather" rel="stylesheet")
     link(rel='stylesheet', href='./styles/main.css')
     
-    title @@@@@@@@@@@@@@@@@@@@@@@@
+    title Qiao 
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
   body
     p.about-me
       |Repetition drives expertise. 
       br
       br
-      |Qiao, is a coder, aspiring poet and ex-architect. Just recovered from a bike-trip around the island of Taiwan, she is currently hibernating in Berlin as a proud furniture fixture of Goodpatch GmbH. 
-    a.contact-email(href="mailto:qiaoclin@gmail.com") Available for collaborations
+      |Qiao, is a coder, aspiring poet and ex-architect. Just recovered from a 
+      a(href="/taiwan" target="_blank") bike-trip around the island of Taiwan, 
+      | she is currently hibernating in Berlin as a proud furniture fixture of 
+      a(href="berlin.goodpatch.com" target="_blank") Goodpatch GmbH. 
+    a.contact-email(href="mailto:qiaoclin@gmail.com") Available for collaboration
+    
+    
+    section.projects 
+      h1 Some of my day dreams 
+      
+      h3.project-title#chicken Over the Air Chiken Soup 
+      
+      p.project-description
+        | Is a 
+        a(href="berlin.goodpatch.com" target="_blank") scraping script 
+        | for search engine images while working for artist Trevor Paglen.
+        br 
+        | Reappropiated to spam 1000 Chicken Soup images when a dear friend has a cold and you simply cannot reach
+      
+      h3.project-title Conversations with many Siri
+      p.project-description
+       | Speech to text Transcriptions, text to text Translation, and text to speech Utterances.  
+       a(href="https://medium.com/@qaarlions/conversations-with-many-siri-3e5f379066b0" target="_blank") A presentation for Cocaoheads
+       | (iOS developers) on Cloud solutions for IoT products
+      
+      
+      
+      
+      h3.project-title Life is not just a stage 
+      
+      p.project-description
+        a(href="https://medium.com/@qaarlions/fischmarkt-in-hamburg-e4f6ff254593" target="_blank")@ the Hamburg fisch market 
+        |observation notes of market stalls performance on a typical Sunday 
+      
+      
+      h3.project-title excuse me,  A  K  M-Y
+      
+      p.project-description
+        a(href="http://akm-y.com/") portfolio site 
+        | for a partner in crime, together we are  * ~ Al Gusto ~ * a production duo on speculative fiction 
+      
+      h3.project-title Homeslice
+      
+      p.project-description
+        | A sprite 
+        a(href="https://github.com/qclin/homeSlice/blob/master/project-idea.md" target="_blank") scene game 
+        | built on satelittle view of American agriculture landscape,
+        | tranversing portals to randomize parts of the google earth street view. 
+      
+    
+      h3.project-title.deprecated Feelz 
+      
+      p.project-description.deprecated
+        a(href="https://github.com/sleepylemur/feelz" target="_blank") a hackathon project 
+        | on emotional tweets accross Manhattan
+        | using Watson API from IBM to diagnosis the sentiments of residents's tweets.  
+        | Rendering blue and red clouds in realtime across city blocks. 
+  
     object.homeCanvas(data="/vectors/test2.svg")
-    script(type='text/javascript', src='scripts/main.js')
+    

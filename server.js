@@ -23,7 +23,6 @@ app.get('/', function(req, res){
 });
 
 app.get('/word1', function(req, res){
-	console.log("halloo wah =--- ")
 	res.render('scenes/first.jade');
 });
 
