@@ -10,10 +10,14 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Inconsolata', monospace;
 }
 a {
   text-decoration: none;
+}
+p{
+  line-height: 1.3em;
 }
 .about-me{
   white-space: pre-line;
@@ -24,7 +28,7 @@ a {
   margin-left:2em;
 }
 section.projects {
-  max-width: 800px;
+  max-width: 580px;
   width: 80%;
   margin: 2em;
   margin-top: 8em;
@@ -35,7 +39,9 @@ section.projects h1 {
   font-weight: 100;
   color: lightgray;
 }
-
+h3.project-title{
+    margin-top: 3em;
+}
 section.projects a{
   text-decoration: underline;
   color: blue;
