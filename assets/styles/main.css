@@ -42,6 +42,8 @@ section.projects h1 {
 h3.project-title{
     margin-top: 3em;
 }
+
+
 section.projects a{
   text-decoration: underline;
   color: blue;
@@ -49,6 +51,7 @@ section.projects a{
 #chicken{
   color: beige;
   text-shadow: 2px 1px #ff0000;
+  margin-top: 2em;
 }
 
 .deprecated{
