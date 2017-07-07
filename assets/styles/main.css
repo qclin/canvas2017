@@ -34,8 +34,8 @@ section.projects h1 {
   font-style: italic;
   font-weight: 100;
   color: lightgray;
-  text-decoration: underline;
 }
+
 section.projects a{
   text-decoration: underline;
   color: blue;
