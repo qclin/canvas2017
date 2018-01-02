@@ -1,0 +1,57 @@
+section.animations
+  h1.subtitle Animations 
+  p.description Consist of found material on the internet, the aesthestic takes on Vaporwave trends 
+    span 
+      a(href="https://www.reddit.com/r/Vaporwave/comments/2eccv5/still_not_really_understanding_this_vaporwave/") [Reddit explains]
+    | . Recycling preset animations with basic 3d models & gifs that most digital tools provide, for an uncanny effect 
+    span
+      a(href="https://vimeo.com/237568588" target="_blank") [Goodbye uncanny vallery] 
+    | that is often bizzare, evoking nostalgia. 
+    span 
+      a(href="https://www.youtube.com/watch?v=aIFBZ3nsHV4" target="_blank") [Mystery of the LOST 90s Animations]
+  .pair
+    img.screenshot(src="/images/cck/animations/screenshot/fibonacci.gif")
+    .description.box The ability to see patterns in nature has carved entire geneaology of disciplines on the studying of geometry, specifically in creative coding, softwares such as Process and OpenFramework are designed for graphically representations of the divine equation -- of ultimate truth. Here I use the fibonacci sequence to layout series of slow blossoming flora. Say, given i number of elements; rotate, translate and scale incrementally to render them in spiral configuration along a fractal path.  
+      .link
+        a(href="http://natureofcode.com/book/chapter-8-fractals/" target="_blank") [ Nature of Code on Fractals]
+      code.block ofRotate( i * 15 );
+      code.block ofTranslate(i * 10, 0 );
+      code.block float scl = 1.0 - i * 0.9 / 20.0;
+      code.block ofScale( scl, scl );
+    img.diagram(src="/images/cck/animations/diagram/fibonacciOverlay.png")
+  .pair
+    img.screenshot(src="/images/cck/animations/screenshot/perspective_gravity.gif")
+    .description.box Gravity is, but an illusion with increment of y position injected with noise pattern 
+      span
+        a(href="https://en.wikipedia.org/wiki/Perlin_noise" target="_blank") [Wiki: Perlin Noise] 
+      | for bounce, oscillation of movement for more naturalness 
+      code float yPos =  -500 * ofNoise(i, j) + ofMap(ofNoise(i+100,j+100), 0,1,0, 100) * timeElapsed;
+      | Perspective, imitation of depth in a flyover footage recedes with calculation of scale in relation to power of time 
+      code ofScale(.5 + 0.01 *  pow(timeElapsed,2), .5 + 0.01 * pow(timeElapsed,2));
+    img.diagram(src="/images/cck/animations/diagram/perspective_gravity.png")
+  .pair
+    img.screenshot(src="/images/cck/animations/screenshot/st_fighter.gif")
+    .description.box Collison detection, is the physics calculation apply in both video games 
+      span 
+        a(href="https://en.wikipedia.org/wiki/Street_Fighter") [Street Fighter]
+      | and Computer Simulations 
+      span
+        a(href="https://en.wikipedia.org/wiki/Computer_simulation" target="_blank") [Wiki] 
+      | to model real world phenomenons. Occurs duing the intersection of the subjects' bounding box and calculated force exerted to retaliate, ie 'bounces' off of each other is the accumulation of inertia.  
+    img.diagram(src="/images/cck/animations/diagram/st_fighter.png")
+  .pair
+    img.screenshot(src="/images/cck/animations/screenshot/ghosting.gif")
+    .description.box Ghosting, the act of following happens when a portion of my position updates to your position, thus following 99% of me plus 1% of you, with every frame update, my position will come closer to you but never exactly your position. 
+      .link 
+        a(href="http://openframeworks.cc/ofBook/chapters/animation.html#linearmovement" target="_blank") [OpenFramework open book - animation chapter on Linear movement]        
+      code dude_catchers[i].pos = 0.99 * dude_catchers[i].pos + 0.01 * dude.pos;
+    img(src="/images/cck/animations/diagram/ghosting.png")
+  .pair
+    img.screenshot(src="/images/cck/animations/screenshot/lissajoux.gif")
+    .description.box One of the first lessons of animations, is the application of trigonometry. The use of Sine and Cosine waves to move object in-out of sync with each other, generate moments of fleeting unison.  When multiply with decimal constants, the velocity is offset to a bezier parabola form of speeding and easing motions, or what I like to call 'a beautiful Pineapple' 
+      .link
+        a(href="https://en.wikipedia.org/wiki/Lissajous_curve" target="_blank") [Wiki: Lissajoux Curve]       
+      code.block float offset = i * sin(ofGetElapsedTimef()*0.1)*0.1;
+      code.block float x = 400 + 300 * cos((duration + offset + j * (PI*2/3.0))* 1.7);
+      code.block float y = 400 + 300 * sin((duration + offset+ j * (PI*2/3.0)) *0.7);
+    img.diagram(src="/images/cck/animations/diagram/lissajouxOverlay.png")

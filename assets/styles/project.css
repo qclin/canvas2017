@@ -1,0 +1,229 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.project-content{
+  margin: 2em;
+}
+
+.title{
+  border: dashed #ffffff;
+  display: inline-block;
+  border-width: 0px 0 1px 0;
+  padding: 1em 0 .8em 0;
+  margin: 0 0 .5em 0;
+}
+
+.subtitle{
+  border: dashed #ffffff;
+  display: inline-block;
+  border-width: 0px 0 1px 0;
+  margin: 0 0 .5em 0;
+  color: white;
+  text-shadow: 2px 2px 4px #4176d0;
+  font-size: 30px;
+  font-style: italic;
+}
+p{
+  line-height: 1.2em;
+  max-width: 640px;
+  width: 80%;
+}
+
+.info-headline{
+
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  /*overflow: hidden;*/
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.code-sample{
+  background: transparent;
+  border: dashed #ffffff;
+}
+.instructions{
+  max-width: 640px;
+}
+code{
+  background: hsl(220, 80%, 90%);
+  display: block;
+  line-height: 1.3em;
+  margin: 10px 13px;
+  padding: 2px 13px;
+  border: double #ffffff;
+}
+
+code.block{
+  margin: 0 13px;
+  border-top: none;
+  border-bottom: none;
+}
+
+
+section.animations, section.music, section.lyrics {
+  margin: 2em 0 ;
+}
+
+.pair{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.pair img{
+  width: 100%;
+}
+img.diagram{
+  width: 80%;
+}
+
+.pair div{
+  text-align: left;
+  margin: 1em;
+}
+
+.pair div, .music .description, .caption{
+  font-size: 13px;
+  font-family: "FranziskaWeb-MediumItalic";
+}
+
+.pair span{
+  font-family: 'Inconsolata', monospace;
+}
+
+table{
+  display: inline-block;
+  border-right: double #ffffff;
+  padding-right: 1em;
+  margin-left: 1em;
+}
+
+table:last-of-type{
+  border-right: none;
+}
+
+/*tr:last-of-type{
+  border-bottom: none;
+}*/
+
+th, tr {
+    border-bottom: double #ffffff;
+    padding: 2px 8px;
+}
+
+
+h3.underscore{
+  width: 400px;
+  border-bottom: 1px dotted #ffffff;
+}
+
+#youtube-roster iframe{
+  width: 200px;
+  display: inline-block;
+  padding: 10px 2px;
+}
+
+#youtube-roster {
+  overflow-x: scroll;
+  height: 170px;
+  overflow-y:hidden;
+  white-space: nowrap;
+}
+
+.strip{
+  border-top: double #ffffff;
+  border-bottom: double #ffffff;
+}
+
+.centerImg{
+  display: block;
+  margin: auto;
+}
+
+#songStructure{
+
+}
+
+#songStructure li{
+  display: inline-block;
+  border: 1px solid #ffffff;
+}
+.align-top{
+  vertical-align: top;
+}
+
+.align-center{
+  vertical-align: center;
+}
+
+.sidebyside {
+  position: relative;
+}
+.main-bloc{
+  position: absolute;
+  top: 180px;
+  right: 2em;
+}
+.sidebyside p{
+  display: inline-block;
+  width: 50%;
+  max-width: 640px;
+    margin: 2em 5em;
+}
+
+.sidebyside img{
+  width: 30%;
+  min-width: 250px;
+  margin: auto;
+}
+
+.main-bloc{
+  max-width: 400px;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+.main-bloc img{
+  width: 100%;
+}
+.image-links img{
+  box-shadow:  5px 10px 5px #888888;
+}
+
+
+.pronounciations{
+
+}
+
+.pronounce{
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pronounce img{
+  width: 80%;
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  max-width: 150px;
+}
+
+.articulation{
+  display: inline-block;
+  font-size: 12px;
+}
+.articulation ul{
+  list-style: circle;
+}

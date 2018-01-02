@@ -1,0 +1,20 @@
+link(rel='stylesheet', href='/styles/nav.css')
+
+a.logo(href='/') Q
+nav.sidenav
+  ul
+    a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") &times; 
+    li
+      a(href="#") about 
+    li
+      a(href='/projects/gusto' data-ajax="false") Gusto
+    li
+      a(href='/projects/cck' data-ajax="false") Consonant Clusters Karaoke
+    li
+      a(href='/projects/noble_self' data-ajax="false") Manifesto for the Noble Self 
+
+span.link(onclick="openNav()") open
+
+script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+
+script(type='text/javascript', src='/scripts/nav.js')

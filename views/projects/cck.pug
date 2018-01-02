@@ -1,0 +1,38 @@
+doctype html 
+html 
+  head 
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet', href='/styles/main.css')
+    link(rel='stylesheet', href='/styles/project.css')
+  body
+    include ../partials/nav.pug
+    section.project-content
+      h1.title Consonant Clusters Karaoke
+      p.description Consonant Cluster Karaoke, A singing machine that tease at the ranges of possible phonetic sounds.  Through the restrictions of vocal tracts, consonants are articulated by the hinderance of airflow, when clustered is surprisingly playful and complex.  
+      p.description Like the wash of the ocean 
+        span.stress wsshh shhh wsssh 
+        |  , or the long compositions found in the languages of Eastern Bloc: 
+        span.stress wszczn 
+        | (Polish), 
+        span.stress pskrblj 
+        | (Croatian), and 
+        span.stress skrbstv
+        | (Slovenian).  
+      div.embed-container.box
+        iframe(src="https://www.youtube.com/embed/DdhcrZSsMOw" frameborder="0" gesture="media" allowfullscreen)
+      
+      p.description Set in a booth-sized room tucked away in the corner, a projection is thrown at an offset angle and RGB LED disco lights flooding the surfaces to set the tone for some serious vibes.  The flat screen display flanked by two microphones ready for a duet, or silo solo and even a group jam.  
+      
+      p.description Song selections are limited to a standard 4 bar progression pop backing track and rather fast house beats found on youtube.  Inviting the audience to embody discomfort of twisting tongues to unknown terrain and ride the fear of sounding ridiculous.  The music videos consist of footages captured by high tech gadgets of mundane spaces such as the slow motion flyover of a drone on a beach and underwater 360 degree perspective, accompany by a series of gif in preset animations.  Presenting a surreal dimension of one commented to be David Lynch-like.
+      
+      p.info.box
+        | Produced at the 
+        span
+          a(href="sfpc.io" target="_blank") School of Poetic Computation 
+        | over the course of a 3-day showcase
+        | November 9th - 11th,  2017 
+
+      p Notes: in the following I will illustrate a series of visual, sound and lyrical detournements, concepts integrated in the Karoake scenes. Links to futher whirlpools on the darknet of Wiki, Reddit and youtube. 
+      include ../partials/cck_animations.pug
+      include ../partials/cck_music.pug
+      include ../partials/cck_lyrics.pug

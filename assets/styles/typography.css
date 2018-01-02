@@ -1,0 +1,23 @@
+.title{
+  font-family: "FranziskaWeb-MediumItalic";
+  font-size: 35px;
+  line-height: 38px;
+  color: #44494C;
+  font-style: italic;
+}
+
+body{
+  font-family: 'Inconsolata', monospace;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Merriweather', serif;
+  /*font-family: 'Inconsolata', monospace;*/
+  font-weight: normal;
+}
+
+.stress{
+  font-style: italic;
+}
