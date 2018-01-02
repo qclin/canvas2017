@@ -53,13 +53,7 @@ app.get('/projects/:project', function(req, res){
 	var imagePath = 'assets/images/'+name;
 	var refPath ='/images/'+name+'/';
 	fs.readdir(imagePath, function(err, items) {
-	    console.log(items);
-	    for (var i=0; i<items.length; i++) {
-	        console.log(items[i]);
-	    }
-
 			res.render(`projects/${name}`, {images: items, path: refPath});
-
 	});
 
 
