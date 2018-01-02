@@ -93,7 +93,7 @@ img.diagram{
   margin: 1em;
 }
 
-.pair div, .music .description, .caption{
+.pair div, .music .description, .caption, .articulation li{
   font-size: 13px;
   font-family: "FranziskaWeb-MediumItalic";
 }
@@ -222,8 +222,14 @@ h3.underscore{
 
 .articulation{
   display: inline-block;
-  font-size: 12px;
+  width: 50%;
+  vertical-align: top;
+  line-height: 1.2em;
 }
 .articulation ul{
-  list-style: circle;
+  list-style: disc;
+}
+
+.articulation li{
+  padding: 3px;
 }
