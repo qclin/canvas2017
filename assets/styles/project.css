@@ -71,16 +71,22 @@ code.block{
 }
 
 
-section.animations, section.music, section.lyrics {
-  margin: 2em 0 ;
+section.animations, section.music, section.lyrics section.body-chamber {
+  margin: 5em 0 ;
 }
 
+section.sub-section{
+  margin: 1em 3em;
+}
 .pair{
   display: inline-block;
   width: 33%;
   text-align: center;
+  vertical-align: top;
 }
-
+#qwerty .pair{
+  width: 30%
+}
 .pair img{
   width: 100%;
 }
@@ -98,6 +104,9 @@ img.diagram{
   font-family: "FranziskaWeb-MediumItalic";
 }
 
+#graph-blend .description{
+  max-width: 640px;
+}
 .pair span{
   font-family: 'Inconsolata', monospace;
 }
@@ -123,7 +132,7 @@ th, tr {
 }
 
 
-h3.underscore{
+.underscore{
   width: 400px;
   border-bottom: 1px dotted #ffffff;
 }
@@ -183,9 +192,15 @@ h3.underscore{
 }
 
 .sidebyside img{
-  width: 30%;
+  width: 35%;
   min-width: 250px;
   margin: auto;
+}
+
+#qwerty .sidebyside div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .main-bloc{
@@ -232,4 +247,53 @@ h3.underscore{
 
 .articulation li{
   padding: 3px;
+}
+
+.dia-trigraphs{
+  font-size: 12px;
+  margin: 1em 0;
+}
+.dia-trigraphs code{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.variations{
+  display: inline-block;
+  vertical-align: top;
+  padding: 1em .5em;
+  font-size: 12px;
+
+}
+
+.variations em{
+  display: block;
+  border-bottom: double white;
+}
+
+p.song-lyrics{
+  font-size: 12px;
+  white-space: pre;
+}
+
+.chunk{
+  position: relative;
+}
+#songStructure{
+  margin: 1em 5em;
+  color: white;
+  padding: 20px;
+  background-color: #99bdc7;
+  border: 1px solid white;
+  background-image: linear-gradient( to top, #FFFFFF 0px, #FFFFFF 1em, #dee0f1 255px, #99bdc7 100% );
+}
+.mm{
+  border-bottom: double white;
+  position: absolute;
+  left: -5.5em;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+  top: 1em;
+  font-size: 12px;
 }

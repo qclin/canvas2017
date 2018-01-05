@@ -3,113 +3,114 @@ section.music
   p The use of backing tracks in Karaoke is enabled with the standardization of the Pop music genre from the 80s. 
   div.links
     a(href="https://www.livinglanguage.com/blog/2012/02/23/karaoke-a-brief-history-of-the-sing-along/") [Brief history of the Sing-Along] 
-  h3.underscore I–V–vi–IV progressions
-  p.description The 4 bar chord progression 
-    span
-      a(href="https://en.wikipedia.org/wiki/I%E2%80%93V%E2%80%93vi%E2%80%93IV_progression") [Wiki] 
-    | compostion allows for ease of mapping lyrics to instrumental variations of the track.  
-    
-    table 
-      tr 
-        th 1
-        th 2
-        th 3
-        th 4
-      tr
-        td A
-        td A
-        td A
-        td A
-      tr
-        td A
-        td A
-        td B
-        td B          
-      tr
-        td A
-        td A
-        td B
-        td A
-      tr
-        td B
-        td B
-        td A 
-        td _
-    table 
-      tr 
-        th 1
-        th 2
-        th 3
-        th 4
-      tr
-        td A
-        td A
-        td B
-        td _
-      tr
-        td B
-        td A
-        td B
-        td A          
-      tr
-        td A
-        td A
-        td B
-        td _
-      tr
-        td _
-        td C
-        td B
-        td A 
-    table 
-      tr 
-        th 1
-        th 2
-        th 3
-        th 4
-      tr
-        td _
-        td C
-        td B
-        td A 
-      tr
-        td B
-        td B
-        td A 
-        td B
-      tr
-        td A
-        td A
-        td B 
-        td _
-      tr
-        td A
-        td A
-        td B 
-        td _
-    
-  h3.underscore Crowdsource Backing Tracks
-  p.description In 2017 we are grateful for the ease of access to Karoake on Youtube, there seems to be an endless stream of backing track productions.  Flourishing genres beyond pop to Rock, Blues, Blues Rock and myriads of other varieties.
-    | ... etc. You name it 
-  #youtube-roster.strip
-    iframe(src="https://www.youtube.com/embed/ilhVM2EoFgk" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/ksvJpS4DdQs" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/mnfENZ_020Y" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/8U0mh_Fqs34" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/9aG4c5H_SkU" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/dChOc19CENU" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/oG0EjItJg4A" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/IH4guiJW5Io" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/JISduKoM2zc" frameborder="0" gesture="media")
-    iframe(src="https://www.youtube.com/embed/m5S1EdVOQ4Q" frameborder="0" gesture="media")
-
-  h3.underscore Tempo & pauses 
-  p.description To measure the tempo of these tracks, beats per minute (BPM) are map to pace out lyrics evenly. 
-    code.block Beats per minute / 4 bar chord progression = bars per minute 
-    code.block 60 seconds / bars per minute = seconds per bar 
-    code.block  float secsPerBeat = 1/(bpm/60);
-    img.diagram.centerImg(src="/images/cck/diagrams/pctSequence.png")
-    code.block  float sequence = ofGetElapsedTimef() - startTime; // display duration
-    code.block  float pctSequence = fmod((currentBeat - accumSize)/lyricSize, 1.0f); 
+  section.sub-section
+    h3.underscore I–V–vi–IV progressions
+    p.description The 4 bar chord progression 
+      span
+        a(href="https://en.wikipedia.org/wiki/I%E2%80%93V%E2%80%93vi%E2%80%93IV_progression") [Wiki] 
+      | compostion allows for ease of mapping lyrics to instrumental variations of the track.  
       
-  
+      table 
+        tr 
+          th 1
+          th 2
+          th 3
+          th 4
+        tr
+          td A
+          td A
+          td A
+          td A
+        tr
+          td A
+          td A
+          td B
+          td B          
+        tr
+          td A
+          td A
+          td B
+          td A
+        tr
+          td B
+          td B
+          td A 
+          td _
+      table 
+        tr 
+          th 1
+          th 2
+          th 3
+          th 4
+        tr
+          td A
+          td A
+          td B
+          td _
+        tr
+          td B
+          td A
+          td B
+          td A          
+        tr
+          td A
+          td A
+          td B
+          td _
+        tr
+          td _
+          td C
+          td B
+          td A 
+      table 
+        tr 
+          th 1
+          th 2
+          th 3
+          th 4
+        tr
+          td _
+          td C
+          td B
+          td A 
+        tr
+          td B
+          td B
+          td A 
+          td B
+        tr
+          td A
+          td A
+          td B 
+          td _
+        tr
+          td A
+          td A
+          td B 
+          td _
+  section.sub-section    
+    h3.underscore Crowdsource Backing Tracks
+    p.description In 2017 we are grateful for the ease of access to Karoake on Youtube, there seems to be an endless stream of backing track productions.  Flourishing genres beyond pop to Rock, Blues, Blues Rock and myriads of other varieties.
+      | ... etc. You name it 
+    #youtube-roster.strip
+      iframe(src="https://www.youtube.com/embed/ilhVM2EoFgk" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/ksvJpS4DdQs" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/mnfENZ_020Y" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/8U0mh_Fqs34" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/9aG4c5H_SkU" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/dChOc19CENU" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/oG0EjItJg4A" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/IH4guiJW5Io" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/JISduKoM2zc" frameborder="0" gesture="media")
+      iframe(src="https://www.youtube.com/embed/m5S1EdVOQ4Q" frameborder="0" gesture="media")
+  section.sub-section    
+    h3.underscore Tempo & pauses 
+    p.description To measure the tempo of these tracks, beats per minute (BPM) are map to pace out lyrics evenly. 
+    p.description Beats per minute / 4 bar chord progression = bars per minute 
+    p.description 60 seconds / bars per minute = seconds per bar 
+      img.diagram.centerImg(src="/images/cck/diagrams/pctSequence.png")
+      code.block  float secsPerBeat = 1/(bpm/60);
+      code.block  float sequence = ofGetElapsedTimef() - startTime; // display duration
+      code.block  float pctSequence = fmod((currentBeat - accumSize)/lyricSize, 1.0f); 
+        
+    

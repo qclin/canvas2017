@@ -1,127 +1,286 @@
-section.lyrics
-  h1.subtitle Lyrics 
+section.body-chamber
+  h1.subtitle Body as a chamber of Instruments 
   h3 Why Consonant Clusters? 
   
   .sidebyside
-    a.image-links(href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank")
-      img.diagram(src="/images/cck/consonant-illustrations/ipa2015.png")
     p.align-top Rather than the projection of sounds with Vowels, Consonant pronounciations require attention to restrictions and coordinations of various organs. The fundamental lesson of acquiring languages is to learn how to twist the tongue and form the vocal tracts differently accross new orthography of phoneme.  Often the obvious culprits for carrying an 'accents' is detected when one pronounces the same set of consonants in their mother tongue rather than in the target language. Accuracy is then measured by the means of our ability to flex in new manners. The following are information extracted mostly from Wikipedia as overviews of much deeper topics in articulation, phonology and orthography as explanations to the compostions of lyrics.   
-    h3.underscore Places of Articulation
-    .main-bloc
-      a.image-links(href="http://clas.mq.edu.au/speech/phonetics/phonetics/introduction/vocaltract.html" target="_blank")
-        img.diagram(src="/images/cck/consonant-illustrations/vocaltract.gif")
-  .pronounciations
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/alveolar.png")
-      .stress Alveolar: 
-      p.caption tongue against or close to the superior alveolar ridge /n/, /t/, /d/, /s/, /z/
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/bilabial.png")
-      .stress Bilabial: 
-      p.caption both lips /m/, /p/, /b/
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/Dental.png")
-      .stress  Dental: 
-      p.caption tongue against the upper teeth /t/, /d/, /n/
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/Labiodentaal.png")
-      .stress  Labiodental: 
-      p.caption lower lip and the upper teeth /pf/, /f/, /v/
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/Laryngaal.png")
-      .stress  Guttural:
-      p.caption 'of the throat' -- general back of the oral cavity, includes velar and uvular consonants (hanging down at the entrance to the throat). First used in Hebrew, subjectively used to denote harsher or grating sounds, partially used in French, Russian and Swabian German
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/Palataal.png")
-      .stress  Palatal: 
-      p.caption body of the tongue raised against the hard palate (the middle middle part of the roof of the mouth); /j/, /y/es
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/retroflex.png")
-      .stress  Retroflex: 
-      p.caption 'bent back' -- tongue has a flat, concave, or even curled shape, and is articulated between the alveolar ridge and the hard palate; /s/, /z/.  Depending on the point of contact with the roof, further back the more concave is the tongue, thus producing a more duller and lower pitch sound.  ie. Polish: cz, sz, ż (rz), dż,  Mandarin: zh, ch, sh, r. German: ç ich, Spanish ñ
-    .pronounce
-      img.diagram(src="/images/cck/consonant-illustrations/Velar.png")
-      .stress  Velar: 
-      p.caption back the tongue (the dorsum) against the soft palate (the back part of the roof of the mouth); /ng/, /k/, /g/. Most common consonant in human languages, since velar region is quite flexible and extensive, it's easily assimilate to other articulation depending in the adjacent vowel.
-  h3.underscore Manners of articulation
-  p.description In considering pronounciations, the study of articulation specifically -- manners in which the 'configuration and interaction of articulators (speech organs such as the tong, lips, palate)' controls stricture, formulate classification.  Here we understand how the body as a chamber of instructment is tuned for various dimensions of sound ranging from Obstruent, Sonorant, Liquid to Continuant 
-  div
-    .articulation
-      ul 
-        .stress Obstruent - obstructed airflow
-        li Stop | Plosive | Occlusive - vocal tract is blocked so that all airflow is ceased, happens in 3 stages, 1. catch, 2. hold, and 3. release of air.
-        li Fricative - forcing air flow through a narrow channel between two articulator, causing a turbulent flow of friction -- thus fricative. 
-        li Afficate - begins as a stop, releases as a fricative
-    .articulation
-      ul 
-        .stress Sonorant - continuous, undisturbed airflow
-        li Nasal - escaping of air through the nose such as /n/, /m/
-        li Approximant - when articulators are near each other but not exactly touching, with enough precision to still generate friction in airstream 
-        li Flap | Trap - a single musle contraction of the articulator to thrust against another. No buildup, no release, ie /tt/
-        li Trill - vibrations between the active articulator and passive articulator, ie. Spanish /rr/
-        li Liquid - great degree of freedom in consonant clusters, consist of Rhotic, R like sounds /r/ and Lateral - where air is channeled along the edges of the tongue, while block by the tongue from traveling in the middle of the mouth 
+    //- a.image-links(href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank")
+    //-   img.diagram(src="/images/cck/consonant-illustrations/ipa2015.png")
+    a.image-links(href="http://clas.mq.edu.au/speech/phonetics/phonetics/introduction/vocaltract.html" target="_blank")
+      img.diagram(src="/images/cck/consonant-illustrations/vocaltract.gif")
+  section.sub-section
+    h3.underscore Places of Articulation  
+    .pronounciations
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/alveolar.png")
+        .stress Alveolar: 
+        p.caption tongue against or close to the superior alveolar ridge /n/, /t/, /d/, /s/, /z/
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/bilabial.png")
+        .stress Bilabial: 
+        p.caption both lips /m/, /p/, /b/
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/Dental.png")
+        .stress  Dental: 
+        p.caption tongue against the upper teeth /t/, /d/, /n/
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/Labiodentaal.png")
+        .stress  Labiodental: 
+        p.caption lower lip and the upper teeth /pf/, /f/, /v/
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/Laryngaal.png")
+        .stress  Guttural:
+        p.caption 'of the throat' -- general back of the oral cavity, includes velar and uvular consonants (hanging down at the entrance to the throat). First used in Hebrew, subjectively used to denote harsher or grating sounds, partially used in French, Russian and Swabian German
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/Palataal.png")
+        .stress  Palatal: 
+        p.caption body of the tongue raised against the hard palate (the middle middle part of the roof of the mouth); /j/, /y/es
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/retroflex.png")
+        .stress  Retroflex: 
+        p.caption 'bent back' -- tongue has a flat, concave, or even curled shape, and is articulated between the alveolar ridge and the hard palate; /s/, /z/.  Depending on the point of contact with the roof, further back the more concave is the tongue, thus producing a more duller and lower pitch sound.  ie. Polish: cz, sz, ż (rz), dż,  Mandarin: zh, ch, sh, r. German: ç ich, Spanish ñ
+      .pronounce
+        img.diagram(src="/images/cck/consonant-illustrations/Velar.png")
+        .stress  Velar: 
+        p.caption back the tongue (the dorsum) against the soft palate (the back part of the roof of the mouth); /ng/, /k/, /g/. Most common consonant in human languages, since velar region is quite flexible and extensive, it's easily assimilate to other articulation depending in the adjacent vowel.
+  section.sub-section
+    h3.underscore Manners of articulation
+    p.description In considering pronounciations, the study of articulation specifically -- manners in which the 'configuration and interaction of articulators (speech organs such as the tong, lips, palate)' controls stricture, formulate classification.  Here we understand how the body as a chamber of instructment is tuned for various dimensions of sound ranging from Obstruent, Sonorant, Liquid to Continuant 
+    div
+      .articulation
+        ul 
+          .stress Obstruent - obstructed airflow
+          li Stop | Plosive | Occlusive - vocal tract is blocked so that all airflow is ceased, happens in 3 stages, 1. catch, 2. hold, and 3. release of air.
+          li Fricative - forcing air flow through a narrow channel between two articulator, causing a turbulent flow of friction -- thus fricative. 
+          li Afficate - begins as a stop, releases as a fricative
+      .articulation
+        ul 
+          .stress Sonorant - continuous, undisturbed airflow
+          li Nasal - escaping of air through the nose such as /n/, /m/
+          li Approximant - when articulators are near each other but not exactly touching, with enough precision to still generate friction in airstream 
+          li Flap | Trap - a single musle contraction of the articulator to thrust against another. No buildup, no release, ie /tt/
+          li Trill - vibrations between the active articulator and passive articulator, ie. Spanish /rr/
+          li Liquid - great degree of freedom in consonant clusters, consist of Rhotic, R like sounds /r/ and Lateral - where air is channeled along the edges of the tongue, while block by the tongue from traveling in the middle of the mouth 
+  
+section.lyrics
+  h1.subtitle Generative Lyrics :
+  section.sub-section#qwerty
+    h3.underscore Random walk on the Qwerty
+    .sidebyside
+      .description Given the ubiquitous instrument, most frequently appeared cluster are already arrange on the Qwerty keyboard. Thus a script for performing random walks on the rows to generate new consonant clusters . Since the keyboard is designed for the most frequently appear combination, it make sense that certain cluster will appear near to each other such as gh, tr, pl while other more fictional pairs have conveniently become internet slang: ie. jk (just kidding), ty (thank you), rt (retweet)
+      div 
+        code.block top: qwr qwrrt qwrrty ty typ
+        code.block middle: sssd sddf sddf dd ddfg hjjk kl k k
+        code.block bottom: zxc xcvvb vvbn bnmm nmm nmm nm
 
-
+    .pair.box
+      img.screenshot(src="/images/cck/diagrams/qwerty_walk/ghb_ghy_ght_gty.gif")
+      .description ghb ghy ght gty
+    .pair.box
+      img.screenshot(src="/images/cck/diagrams/qwerty_walk/frt_frg_fbv_bhn.gif")
+      .description frt frg fbv bhn
+    .pair.box
+      img.screenshot(src="/images/cck/diagrams/qwerty_walk/mnv_jkfd_sdfg_dfgh_fghj_ghjk_jkl.gif")
+      .description mnv jkfd sdfg dfgh fghj ghjk jkl
     
-        
-  h3 Song Structure
-    ul#songStructure
-      li intro
-      li verse
-      li Pre-chorus
-      li chorus
-      li verse
-      li Pre-chorus
-      li chorus
-      li bridge
-      li verse
-      li chorus
-      li outro
-//- 
-//- # repetition
-//-     td mh td mh
-//-     ss mm ss ss
-//-     ssm smm msm
-//- 
-//- # variation
-//-     td mh td mh
-//-     mh td md td
-//-     td td md md
-//- 
-//- # mutation
-//-     mm mh hh mm
-//-     mh mm h h h
-//- 
-//- 
-//- # two two - four
-//-     # ch sz cshz
-//-     # ch ch chsz
-//-     xcz cv bh nk mkkl
-//-     plk plkj kjh ghj fgt wqd
-//-     fsj fds fgh
-//- 
-//- # elongation
-//- t tz tzg tzgh
-//- t st tsg tzst
-//- 
-//- 
-//- # dwindling
-//- rrsk rrsk sk t t
-//- 
-//- 
-//- # a walk on the qwerty keyboard, neighbor tones
-//-     t d b tdb db db hbd
-//-     ghb ghy ght gty
-//-     frt frg fbv bhn
-//-     mnv jkfd sdfg dfgh fghj ghjk jkl
-//-     zxc xcvvb vvbn bnmm nmm nmm nm
-//- 
-//-     qwr qwrrt qwrrty ty typ
-//-     sssd sddf sddf dd ddfg hjjk kl k k
-//-     zx zx zxcccvbn vnm
-//- 
-//- 
-//- # alphabetical consonants
-//-     bc df
-//-     gh jkl mn
-//-     pqrs tv wxzy
+    
+  section.sub-section#graph-blend  
+    h3.underscore Preset Clusters shuffle
+    .description In english, consonant clusters are classified as either blends (morphing the sound) and graphs (produce only one sound) diagraphs for pairs and trigraphs as trios. Which limit us to a set of clusters for compostion.  More variations are created from exisitng clusters via mutations and duplication techniques. 
+    .dia-trigraphs Blends: 
+      code bl, br, cl, cr, dr, gl, gr, fl, fr, pl, pr, sl, sm, sp, st, tr, wr
+    .dia-trigraphs Diagraphs: 
+      code ck, ch, gh, ng, ph, ng, sc, sk, sl, sh, sn, sw, th, tw, wh
+    .dia-trigraphs Triagraphs: 
+      code scr, shr, spl, spr, str, thr
+    .variations 
+      em # repetition
+      table 
+        tr 
+          td td
+          td mh
+          td td
+          td mh
+        tr
+          td ss
+          td mm
+          td ss
+          td ss
+        tr
+          td ssm
+          td smm
+          td
+          td msm
+          td 
+    .variations 
+      em # variation
+      table 
+        tr 
+          td td
+          td mh
+          td td
+          td mh
+        tr
+          td mh
+          td td
+          td md
+          td td
+        tr
+          td td
+          td td
+          td md
+          td md
+    .variations 
+      em # mutation
+      table 
+        tr 
+          td mm
+          td mh
+          td hh
+          td mm
+        tr
+          td mh
+          td mm
+          td h
+          td h
+          td h
+    .variations 
+      em # elongation
+      table 
+        tr 
+          td t
+          td tz
+          td tzg
+          td tzgh
+        tr
+          td t
+          td st
+          td tsg
+          td tzst
+    .variations  
+      em # dwindling
+      table
+        tr 
+          td rrsk 
+          td rrsk 
+          td sk 
+          td t 
+          td t
+    .variations 
+      em # II II - IV
+      table 
+        tr 
+          td ch
+          td sz
+          td cshz
+        tr
+          td ch
+          td ch
+          td chsz
+        tr
+          td xcz
+          td cv
+          td bh
+          td nk
+          td mkkl
+        tr
+          td plk
+          td plkj
+          td kjh
+          td ghj
+          td fgt
+          td wqd
+        tr 
+          td fsj
+          td fds
+          td fgh
+  section.sub-section  
+    h3.underscore Repeat the random & vary the presets 
+    p.description The arbitrary act of writing song lyrics consists of only consonant cluster utterances,  is however 'justify' by applying existing structures and all of the materials of the english orthography. Applying The new clusters from Random Walk on the Qwerty are fitted in repetitive choruses while the blends and graphs flow along the verstile verse.  Dialectically weaving the foriegn with the familar in a verse-verse-chorus. 
+    
+    h3.underscore Song Structure
+    #songStructure
+      .chunk
+        .mm intro
+        p.song-lyrics
+          | st smst sm   
+          | smmssmm   smmssmm   
+          | smms  smms   smms smm   smmthr sprthr spr  
+      .chunk
+        .mm verse
+        p.song-lyrics
+          |   thrtthrt   thrtthrt   
+          | thrt  thrt   sprs thrt   sprrpsng chng ch   
+          |   chhcchh   chhcchh   
+          | chhc  chhc   chc chh   chc
+      .chunk
+        .mm pre-chorus
+        p.song-lyrics
+          | st grst gr   
+          |    grrgsts   grrgsts   
+          | grrg  grrg   stt sts   grrshr thrshr thr   
+          |    shrsthrr   shrsthrr   
+          | shrs  shrs   thrt thrr   thrtng snng sn   
+          |    snssnns   snssnns   
+          | sns  sns   snns snns   sns
+      .chunk
+        .mm chorus
+        p.song-lyrics
+          | gnng gnng gnn gng gnnggnng
+          | pmmp pmmp pmm pmp pmmppmmp
+          | jxxj jxxj jxx jxj jxxjjxxj
+      
+      .chunk
+        .mm verse
+        p.song-lyrics
+          | cl glcl gl   
+          |    cllccllc   cllccllc   
+          | cllc  cllc   gllg cllc   cllcspr strspr str   
+          |    sprrpsstrr   sprrpsstrr   
+          | sprrps  sprrps   strs strr   strrtstw phtw ph   
+          |    twwphp   twwphp   
+          | tww  tww   phh php   twt
+      
+      .chunk
+        .mm verse
+        p.song-lyrics
+          | br trbr tr   
+          |    brrbrb   brrbrb   
+          | brr  brr   trt brb   trtstr scrstr scr   
+          |    scrrcsstrrts   scrrcsstrrts   
+          | scrrcs  scrrcs   scrrcs strrts   strssk cksk ck   
+          |    ckkcskk   ckkcskk   
+          | ckkc  ckkc   ckc skk   sks
+      
+      .chunk
+        .mm chorus
+        p.song-lyrics
+          | sdds sdds sdd sds sddssdds
+          | thht thht thh tht thhtthht
+          | wllw wllw wll wlw wllwwllw
+      .chunk
+        .mm verse 
+        p.song-lyrics
+          | st blst bl   
+          |    sttsstt   sttsstt   
+          | stts  stts   stts stt   blbscr sprscr spr   
+          |    sprrpsscrrcs   sprrpsscrrcs   
+          | sprrps  sprrps   sprs scrrcs   sprrsh thsh th   
+          |    thttht   thttht   
+          | tht  tht   shhs tht   shhs
+      .chunk
+        .mm verse
+        p.song-lyrics
+          | pr plpr pl   
+          |    plpplp   plpplp   
+          | plp  plp   prrp plp   prrscr splscr spl   
+          |    scrrspll   scrrspll   
+          | scrr  scrr   scrs spll   scrssl ghsl gh   
+          |    slsghg   slsghg   
+          | sls  sls   slls ghg   slls
+      .chunk
+        .mm chorus
+        p.song-lyrics
+          | rzzr rzzr rzz rzr rzzrrzzr
+          | txxt txxt txx txt txxttxxt
+          | tmmt tmmt tmm tmt tmmttmmt
