@@ -3,6 +3,12 @@ body{
   width: 100vw;
   overflow-x: hidden;
 }
+
+.fixNav{
+  position: fixed;
+  right: 2em;
+  color: white;
+}
 .project-content{
   margin: 2em;
 }
@@ -83,6 +89,7 @@ section.sub-section{
   width: 33%;
   text-align: center;
   vertical-align: top;
+  z-index: 10; 
 }
 #qwerty .pair{
   width: 30%
