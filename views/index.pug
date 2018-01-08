@@ -9,7 +9,8 @@ html
     link(rel='shortcut icon', href='./images/favicon.jpg', type='image/x-icon') 
     link(href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather" rel="stylesheet")
     link(rel='stylesheet', href='./styles/main.css')
-    
+    link(rel='stylesheet', href='./styles/index.css')
+
     title Qiao 
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
   body
@@ -23,7 +24,7 @@ html
       |  working with startups and traditional enterprises. Commited to mingle with other enthusiastic creatures at the 
       a.organization.green-text(href="http://sfpc.io/" target="_blank") School of Poetic Computation
       | , in an redemptative act from agency hustle. She savors long distance cycling with her 
-      a(href="http://qiaoclin.com:8080/") 35mm film camera. 
+      a(href="http://qiaoclin.com:8080/" target="_blank") 35mm film camera. 
       em Solitude is the party of one.
     a.contact-email(href="mailto:qiaoclin@gmail.com") Available for collaboration
     
@@ -31,79 +32,85 @@ html
     
     section.projects 
       p Some day dream sketches:
-      
-      a(href="/projects/cck" data-ajax="false")
-        h3.title Consonant Clusters Karaoke
-      
-      p.description Built in openFrameworks, a singing machine that teases at the ranges of possible phonetic sounds. As part of School of Poetic Computation showcase, over a hundred participants sang over the course of three days. 
-        
-        
-      a(href="/projects/nobleSelf" data-ajax="false")
-        h3.title Manifesto for the Noble Self 
-      
-      p.description A podcast episode on Manifestos for the Internet Age, via interviews, generative text with natural language processing, and human-machine readings 
-
-
-      //- a(href="/projects/linebyline" data-ajax="false")
-      h3.title Code Poetry 
-      
-      p.description A series of exploration in 
-        a(href="https://twitter.com/eine_eier") generative text 
-        | with mathematical and natural language processing procedures at the School of Poetic Computation
-
+      .project
+        a(href="/projects/cck")
+          h3.title Consonant Clusters Karaoke
+        img.preview(src="/images/preview/IMG_7432.JPG")
+        p.description Built in openFrameworks, a singing machine that teases at the ranges of possible phonetic sounds. As part of School of Poetic Computation showcase, over a hundred participants sang over the course of three days. 
           
-      a(href="/projects/chicken" data-ajax="false")
-        h3.title#chicken Over the Air Chiken Soup 
+      .project
+        a(href="/projects/nobleSelf")
+          h3.title Manifesto for the Noble Self 
+        img.preview(src="/images/preview/manifesto.jpg")
+        p.description A podcast episode on Manifestos for the Internet Age, via interviews, generative text with natural language processing, and human-machine readings 
+
+      .project
+        //- a(href="/projects/code_poetry")
+        h3.title Code Poetry 
+        img.preview(src="/images/preview/IMG_C3626BEE6815-1.jpeg")
+        p.description A series of exploration in 
+          a(href="https://twitter.com/eine_eier") generative text 
+          | with mathematical and natural language processing procedures at the School of Poetic Computation
+
+      .project    
+        a(href="/projects/chicken")
+          h3.title#chicken Over the Air Chiken Soup 
+        img.preview(src="/images/preview/chicken.png")
+        p.description
+          | Is a 
+          a(href="https://github.com/qclin/imageScrape" target="_blank") scraping script 
+          | for search engine images while working for artist Trevor Paglen. 
+          | Reappropiated to spam 1000 Chicken Soup images when a dear friend has a cold and you simply cannot reach.
+      .project  
+        h3.title Conversations with many Siri
+        img.preview(src="/images/preview/siri_conversation.png")
+        p.description Speech to text Transcriptions, text to text Translation, and text to speech Utterances.  
+         a(href="https://medium.com/@qaarlions/conversations-with-many-siri-3e5f379066b0" target="_blank") A presentation for Cocaoheads
+         | (iOS developers) on Cloud solutions for IoT products.
+         
+      .project
+        h3.title Life is not a stage 
+        img.preview(src="/images/fujifilm/003_3A.jpg")
+        p.description Hamburg Fisch markt 
+          a(href="https://medium.com/@qaarlions/fischmarkt-in-hamburg-e4f6ff254593" target="_blank") observation notes 
+          | of market stall performances on a typical Sunday. 
       
-      p.description
-        | Is a 
-        a(href="https://github.com/qclin/imageScrape" target="_blank") scraping script 
-        | for search engine images while working for artist Trevor Paglen. 
-        | Reappropiated to spam 1000 Chicken Soup images when a dear friend has a cold and you simply cannot reach.
+      .project
+        h3.title  AKM-Y
+        img.preview(src="/images/preview/akmy.png")
+        p.description
+          a(href="http://akm-y.com/") portfolio website 
+          | for a partner in crime, together we are  * ~ Al Gusto ~ * a production duo on speculative fiction. 
       
-      h3.title Conversations with many Siri
-      p.description
-       | Speech to text Transcriptions, text to text Translation, and text to speech Utterances.  
-       a(href="https://medium.com/@qaarlions/conversations-with-many-siri-3e5f379066b0" target="_blank") A presentation for Cocaoheads
-       | (iOS developers) on Cloud solutions for IoT products.
-       
-      
-      h3.title Life is not a stage 
-      
-      p.description Hamburg Fisch markt 
-        a(href="https://medium.com/@qaarlions/fischmarkt-in-hamburg-e4f6ff254593" target="_blank") observation notes 
-        | of market stall performances on a typical Sunday. 
-      
-      
-      h3.title  AKM-Y
-      p.description
-        a(href="http://akm-y.com/") portfolio website 
-        | for a partner in crime, together we are  * ~ Al Gusto ~ * a production duo on speculative fiction. 
-      
-      h3.title Homeslice
-      p.description A 
-        a(href="https://github.com/qclin/homeSlice/blob/master/project-idea.md" target="_blank") sprite game 
-        | built on satelittle view of Jeffersonian agriculture landscape,
-        | tranversing portals to randomize parts of the google earth street view. 
-      
-    
-      h3.title.deprecated Feelz.io
-      p.description.deprecated
-        a(href="https://github.com/sleepylemur/feelz" target="_blank") a hackathon project 
-        | on emotional tweets accross Manhattan
-        | using Watson API from IBM to diagnosis the sentiments of residents's tweets.  
-        | Rendering blue and red clouds in realtime across city blocks. 
-      
-      
-      h3.title  Speculations on Vertical farming
-      
-      p.description
-        a(href="http://3qoo.tumblr.com/" target="_blank") Digital artifacts 
-        | fabricated for a speculative future of urban farming with artist Ben Schumacher
-      
-      
+      .project
+        h3.title Homeslice
+        img.preview(src="/images/preview/homSliceglitch.png")
+        p.description A 
+          a(href="https://github.com/qclin/homeSlice/blob/master/project-idea.md" target="_blank") sprite game 
+          | built on satelittle view of Jeffersonian agriculture landscape,
+          | tranversing portals to randomize parts of the google earth street view. 
+        
+      .project
+        h3.title.deprecated Feelz.io
+        img.preview(src="/images/preview/feelzio.png")
+        p.description.deprecated
+          a(href="https://github.com/sleepylemur/feelz" target="_blank") a hackathon project 
+          | on emotional tweets accross Manhattan
+          | using Watson API from IBM to diagnosis the sentiments of residents's tweets.  
+          | Rendering blue and red clouds in realtime across city blocks. 
+        
+      .project
+        h3.title  Speculations on Vertical farming
+        img.preview(src="/images/preview/schumacher.jpg")
+        p.description
+          a(href="http://3qoo.tumblr.com/" target="_blank") Digital artifacts 
+          | fabricated for a speculative future of urban farming with artist Ben Schumacher
+  
       //- h3.title Tangible Intangibles
       //- p.description
       //-   a(href="/arch") architectural adventures
     //- object.homeCanvas(data="/vectors/test2.svg")
     
+    script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+
+    script(type='text/javascript', src='/scripts/main.js')

@@ -1,0 +1,64 @@
+
+
+.about-me{
+  white-space: pre-line;
+  max-width: 450px;
+  width: 80%;
+  margin: 2em;
+}
+.contact-email{
+  margin-left:2em;
+}
+.organization{
+  text-decoration: underline;
+}
+.organization:hover{
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+
+}
+h3.title{
+    margin-top: 3em;
+    font-size: 24px;
+}
+
+h3.title:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+p.description{
+  margin-top: 0;
+  max-width: 640px;
+}
+
+.project{
+  position: relative;
+}
+
+.reveal{
+  display: block !important;
+}
+img.preview{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 500px;
+  max-width: 400px;
+  box-shadow:  2px 2px 4px #00FFCC;
+}
+
+
+.deprecated{
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+#chicken{
+  color: beige;
+  text-shadow: 2px 1px #ff0000;
+  margin-top: 2em;
+}

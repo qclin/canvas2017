@@ -1,8 +1,7 @@
 $(document).ready(function(){
-
-    setTimeout(function(){ $('svg:text').click(function(){
-        alert("clicked!!")
-    }) }, 3000);
-
-
+  $('.project').hover(function(e){
+    console.log('project hover hover ')
+    $('.reveal').toggleClass('reveal');
+    $(this).find('img').addClass('reveal');
+  });
 });

@@ -7,35 +7,13 @@
 .imageLink{
 
 }
-
 a {
   text-decoration: none;
 }
 p{
   line-height: 1.3em;
 }
-.about-me{
-  white-space: pre-line;
-  max-width: 450px;
-  width: 80%;
-  margin: 2em;
-}
-.contact-email{
-  margin-left:2em;
-}
-.organization{
-  text-decoration: underline;
-}
-.organization:hover{
-  font-style: italic;
-  color: white;
-  text-decoration: none;
-
-}
-
 section.projects {
-  max-width: 580px;
-  width: 80%;
   margin: 2em;
   margin-top: 8em;
 }
@@ -45,30 +23,10 @@ section.projects h1 {
   font-weight: 100;
   color: lightgray;
 }
-h3.title{
-    margin-top: 3em;
-    font-size: 24px;
-}
-
-h3.title:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
 section.projects a{
   color: blue;
 }
-#chicken{
-  color: beige;
-  text-shadow: 2px 1px #ff0000;
-  margin-top: 2em;
-}
-.projects p.description{
-  margin-top: 0;
-}
-.deprecated{
-  color: lightgray;
-  text-decoration: line-through;
-}
+
 .box{
   border: double #ffffff;
   padding: 13px;

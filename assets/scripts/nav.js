@@ -9,9 +9,3 @@ function openNav() {
 function closeNav() {
     $('nav').css('width', '0px');
 }
-
-$(document).ready(function(){
-
-  console.log("projectKey ::::",projectKey);
-
-});
