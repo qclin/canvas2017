@@ -4,6 +4,16 @@ body{
   overflow-x: hidden;
 }
 
+body#cck{
+  background-color: #dee0f1;
+  background-image: linear-gradient( to bottom, #FFFFFF 0px, #FFFFFF 96px, #dee0f1 255px, #dee0f1 100% );
+}
+
+
+body#noble-self{
+  background-color: #ffe4b3;
+  background-image: linear-gradient( to bottom, #FFFFFF 0px, #FFFFFF 50%, #ffc966 98%, #ffae1a 100% );
+}
 .fixNav{
   position: fixed;
   right: 2em;
@@ -89,7 +99,7 @@ section.sub-section{
   width: 33%;
   text-align: center;
   vertical-align: top;
-  z-index: 10; 
+  z-index: 10;
 }
 #qwerty .pair{
   width: 30%
@@ -303,4 +313,15 @@ p.song-lyrics{
   transform: rotate(-90deg);
   top: 1em;
   font-size: 12px;
+}
+
+
+
+.svg-visualizer{
+  width: 100%;
+}
+
+.displacy{
+  background: none;
+  color: #000000;
 }

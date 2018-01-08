@@ -6,8 +6,8 @@ nav {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #dee0f1;
-    background-image: linear-gradient( to right, #FFFFFF 0px, #FFFFFF 96px, #deeaf1 255px, #dee0f1 100% );
+    /*background-color: #dee0f1;*/
+    background-image: linear-gradient( to right, rgba(255, 255, 255, .2) 0px,  #deeaf1 50px, rgba(255, 255, 255, .95) 50%, #deeaf1 100% );
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     transition: 0.5s;
@@ -53,6 +53,9 @@ nav .closebtn:hover{
   cursor: pointer;
 }
 
+.open-wave{
+  line-height: 8px;
+}
 /* Style page content */
 .main {
     margin-left: 160px; /* Same as the width of the sidebar */
@@ -66,10 +69,16 @@ nav .closebtn:hover{
 }
 
 #open{
-  font-size: 30px;
+  font-size: 48px;
   color: blue;
+  display: inline-block;
+  position: fixed;
+  top: 12px;
 }
 
 #open:hover{
   text-shadow: 2px 2px 8px #FF0000;
+}
+.highlight{
+  color: #0000FF;
 }

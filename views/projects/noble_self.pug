@@ -4,7 +4,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     link(rel='stylesheet', href='/styles/main.css')
     link(rel='stylesheet', href='/styles/project.css')
-  body
+  body#noble-self
     include ../partials/nav.pug
     section.project-content
       h1.title Manifesto for the Noble Self 
@@ -26,9 +26,7 @@ html
         | Weeding out patterns of moral competences, emotional influences and rational reasoning. 
 
       div.box
-        iframe(width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/356188508&amp;color=%23878787&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=true")
-      
-          
+        iframe(width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/356188508&amp;color=%23878787&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=true")          
           
       p.description We looked for metaphors and simile, compared opposition accusations and resonated with calls to action. 
         examples :         
@@ -43,3 +41,12 @@ html
       p.description Interview with Moreshin Allahyari on the production of Manifesto genre.
 
       p.description with Colin Wang, He Wei, Niklas May, & Yumi Nishida
+      
+      
+  section.sub-section
+    h3.underscore Oppositional : You vs Us
+      
+    p You claim there are problems among us that you need to solve.
+    object.svg-visualizer(data="/images/nobleSelf/no_sovereignty.svg" type="image/svg+xml")
+    p Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+    object.svg-visualizer(data="/images/nobleSelf/delivery_software.svg" type="image/svg+xml")

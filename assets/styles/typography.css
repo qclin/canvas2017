@@ -11,7 +11,6 @@ body{
 }
 
 
-
 h1,h2,h3,h4,h5,h6{
   font-family: 'Merriweather', serif;
   /*font-family: 'Inconsolata', monospace;*/
@@ -20,4 +19,37 @@ h1,h2,h3,h4,h5,h6{
 
 .stress{
   font-style: italic;
+}
+
+
+.info-text{
+  font-family: "FranziskaWeb-MediumItalic";
+  font-size: 12px;
+}
+
+
+.quote{
+  font-family: "FranziskaWeb-MediumItalic";
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+  position: relative;
+  float: right;
+  width: 200px;
+  margin: 3em;
+}
+
+.quote:hover{
+  text-shadow: 2px 2px 4px gray;
+}
+.red-text:hover{
+  text-shadow: 2px 2px 1px #FF0000;
+}
+
+.green-text:hover{
+  text-shadow: 2px 2px 1px #00FF00;
+}
+
+.blue-text:hover{
+  text-shadow: 2px 2px 1px #0000FF;
 }

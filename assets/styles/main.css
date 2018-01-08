@@ -7,10 +7,6 @@
 .imageLink{
 
 }
-body{
-  background-color: #dee0f1;
-  background-image: linear-gradient( to bottom, #FFFFFF 0px, #FFFFFF 96px, #dee0f1 255px, #dee0f1 100% );
-}
 
 a {
   text-decoration: none;
@@ -20,12 +16,23 @@ p{
 }
 .about-me{
   white-space: pre-line;
-  width: 400px;
+  max-width: 450px;
+  width: 80%;
   margin: 2em;
 }
 .contact-email{
   margin-left:2em;
 }
+.organization{
+  text-decoration: underline;
+}
+.organization:hover{
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+
+}
+
 section.projects {
   max-width: 580px;
   width: 80%;
@@ -38,13 +45,16 @@ section.projects h1 {
   font-weight: 100;
   color: lightgray;
 }
-h3.project-title{
+h3.title{
     margin-top: 3em;
+    font-size: 24px;
 }
 
-
-section.projects a{
+h3.title:hover{
   text-decoration: underline;
+  cursor: pointer;
+}
+section.projects a{
   color: blue;
 }
 #chicken{
@@ -52,7 +62,9 @@ section.projects a{
   text-shadow: 2px 1px #ff0000;
   margin-top: 2em;
 }
-
+.projects p.description{
+  margin-top: 0;
+}
 .deprecated{
   color: lightgray;
   text-decoration: line-through;
