@@ -414,3 +414,28 @@ p.song-lyrics{
 .deg180 { transform: translate(-15em); }
 .deg225 { transform: rotate(225deg) translate(15em) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(15em) rotate(-315deg); }
+
+ul.citation li{
+  line-height: 20px;
+  font-size: 13px;
+}
+#sour-generation p{
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  min-width: 250px;
+  margin-right: .5em;
+  /*min-width: 350px;*/
+  border: double #FFFFFF;
+  padding: 10px 2px;
+}
+
+#sour-generation p:hover{
+  color: white;
+  background-image: linear-gradient( to bottom, #ff0000 0px, #ffc966 45%, #fff9ef 50%, #ffc966 78%, #ff0000 100% );
+}
+
+#interview{
+  width: 80%;
+  max-width: 640px;
+}
