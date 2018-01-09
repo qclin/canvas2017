@@ -23,11 +23,12 @@ h3.title{
     font-size: 24px;
 }
 
-h3.title:hover{
+a h3.title:hover{
   text-decoration: underline;
+}
+a{
   cursor: pointer;
 }
-
 
 p.description{
   margin-top: 0;
@@ -48,7 +49,7 @@ img.preview{
   top: 0;
   max-height: 500px;
   max-width: 400px;
-  box-shadow:  2px 2px 4px #00FFCC;
+  box-shadow:  2px 2px 4px blueviolet;
 }
 
 

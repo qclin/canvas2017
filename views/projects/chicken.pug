@@ -9,28 +9,33 @@ html
     section.project-content
       h1.title Over the Air Chicken Soup 
       p.description Is a scraping script for search engine images while working for artist Trevor Paglen. Reappropiated to spam 1000 Chicken Soup images when a dear friend has a cold and you simply cannot reach.
-      each image in images 
-        img(src=path+image)
-      iframe(width="560" height="315" src="https://www.youtube.com/embed/czGn3TnFP1s" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
-    section.code-sample
-      h3 A Series of Scripts 
-      div.link 
-        a(href="https://github.com/qclin/imageScrape" target="_blank") [source code]
-      ul.instructions
-        li Spoofed search engines & enter Keyword 
-          code new Scraper.Google(); google.list({keyword}); 
-        li Fetch url from Json & write to new log text file 
-          code fs.appendFile(`log-${searchEngine}-${keyword}.txt`, url+"\r\n"); 
-        li Download entire log of 1000 urls with wget 
-          code wget -i log-[keyword].txt
-        li Clean/rename file, remove query parameter 
-          code newfile = oldfile.split('?')[0], os.rename(oldfile, newfile)
-        li Organize image files by extension 
-          code.block mkdir -p png jpg gif 
-          code.block mv *.jpeg jpg/
-          code.block mv *.png png/
-          code.block mv *.GIF gif/
-          
+      section.sub-section
+        h3.underscore Composite images of a thousand results
+        .composites
+          img(src="/images/chicken/darker.png")
+          .caption 雞湯jpg
+        .composites
+          img(src="/images/chicken/lighter.png")
+          .caption Chicken Soup 
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/czGn3TnFP1s" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
+      section.code-sample
+        h3 A Series of Scripts 
+        div.link 
+          a(href="https://github.com/qclin/imageScrape" target="_blank") [source code]
+        ul.instructions
+          li Spoofed search engines & enter Keyword 
+            code new Scraper.Google(); google.list({keyword}); 
+          li Fetch url from Json & write to new log text file 
+            code fs.appendFile(`log-${searchEngine}-${keyword}.txt`, url+"\r\n"); 
+          li Download entire log of 1000 urls with wget 
+            code wget -i log-[keyword].txt
+          li Clean/rename file, remove query parameter 
+            code newfile = oldfile.split('?')[0], os.rename(oldfile, newfile)
+          li Organize image files by extension 
+            code.block mkdir -p png jpg gif 
+            code.block mv *.jpeg jpg/
+            code.block mv *.png png/
+            code.block mv *.GIF gif/
+            
 
       
-div#main
