@@ -44,6 +44,7 @@ body#noble-self{
 }
 
 #noble-self .subtitle{
+  margin-top: 2em;
   text-shadow: 2px 2px 4px #f65026;
 }
 p{
