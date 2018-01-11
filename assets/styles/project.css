@@ -422,8 +422,14 @@ p.song-lyrics{
 
 ul.citation li{
   line-height: 20px;
-  font-size: 13px;
+  font-size: 18px;
+  margin-bottom: 2em;
 }
+ul.citation .caption{
+  font-size: 18px;
+}
+
+
 #sour-generation p{
   display: inline-block;
   vertical-align: top;
@@ -433,14 +439,88 @@ ul.citation li{
   /*min-width: 350px;*/
   border: double #FFFFFF;
   padding: 10px 2px;
+  font-size: 12px;
 }
 
 #sour-generation p:hover{
-  color: white;
-  background-image: linear-gradient( to bottom, #ff0000 0px, #ffc966 45%, #fff9ef 50%, #ffc966 78%, #ff0000 100% );
+  vertical-align: center;
+  box-shadow: 2px 2px 4px #888888;
+  background: #FFFFFF;
+  font-size: 18px;
+  /*background-image: linear-gradient( to bottom, #ff0000 0px, #ffc966 45%, #fff9ef 50%, #ffc966 78%, #ff0000 100% );*/
 }
 
 #interview{
   width: 80%;
   max-width: 640px;
+}
+
+#analysis p{
+  font-size: 12px;
+}
+#analysis p.info-text{
+  font-style: italic;
+  color: red;
+  background: #FFFBCC;
+  font-size: 14px;
+  padding: 6px;
+}
+#analysis p.note{
+  float: right;
+  color: #0000FF;
+  margin: 0;
+
+}
+.clause{
+  margin: 1em 0;
+}
+.clause p{
+  margin: 0;
+}
+
+.clause p.parsed{
+  padding: 0 6px;
+}
+.description{
+  max-width: 640px;
+}
+
+
+
+.tablink{
+  cursor: pointer;
+  font-size: 18px;
+  border: double #FFF;
+
+}
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tablink.active {
+    border-bottom: 3px solid #00F;
+}
+#excerpt-tabs{
+  max-width: 640px;
+  width: 80%;
+  margin: 3em auto;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px dashed #00F;
+    border-top: none;
+    font-size: 11px;
+    background: #FFFFFF;
+}
+.tabcontent p {
+  max-width: none;
+}
+
+.tabcontent h3{
+  text-decoration: underline;
+  font-style: italic;
 }

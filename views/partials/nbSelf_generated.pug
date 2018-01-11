@@ -1,14 +1,391 @@
 section.utterances
-  h1.subtitle Collective Utterances - Generated excerpts
+  h1.subtitle Structural Analysis - murmurs & noise 
   p.description We seek metaphors and simile, compare opposition/accusations, and resonate with calls to action. 
     examples :         
     | Applying linguistic methods, we were able to reconstructure new utterances that falls under similar sentence structures. 
   div.link 
     a(href="https://github.com/qclin/spacy_man_gen" target="_blank") [source code]
-  h3.underscore Oppositional : You vs Us
+  #analysis   
+    section.sub-section
+      h3.underscore Oppositional : We against you 
+      h4 Dependency parsing for causal clauses and syntactic dependency relation.
+      p.info-text You have no sovereignty where we gather.
+      p.info-text You have not engaged in our great and gathering conversation, nor did you create the wealth of our marketplaces.
+      .clause 
+        p.info-text You claim there are problems among us that you need to solve.
+        p.parsed nsubj | ccomp | expl | attr | prep | pobj | mark | xcomp
+        p.parsed nominal subject - clausal complement - attribute - prepositional modifier - object of preposition - marker - open clausal complement
+      object.svg-visualizer(data="/images/nobleSelf/no_sovereignty.svg" type="image/svg+xml")
+      p.note * Arcs illustrate dependency, while part of speech is tagged on the bottom 
+    section.sub-section
+      h3.underscore Claims, What's at Stake?  
+      p.info-text The internet is fast becoming a method of repression rather than an instrument of liberation,
+      p.info-text Fresh approaches and radical views are marginalized as they do not conform with the dogmas of the Church of Industrial Design.
+      
+      h4 POS Part of Speech Tagging for generic compositions, syntactic structures 
+      .clause 
+        p.info-text To tell the truth is not a crime.
+        p.parsed PART | VERB | DET | NOUN | VERB | ADV | DET | NOUN | PUNCT 
+      .clause 
+        p.info-text Every body should understand computers.
+        p.parsed DET | NOUN | VERB | VERB | NOUN | PUNCT 
+      
+      p.info-text Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+      object.svg-visualizer(data="/images/nobleSelf/delivery_software.svg" type="image/svg+xml")
+  #generated  
+    h1.subtitle  Collective Utterances - Generated excerpts 
+    .description Combining objectives and causality, by applying dependency and POS analysis we generated sentences of similar disposition and edited a tale-telling structure sow with adjectives and provacation.  Beginning with a declaration of three adjectives as if inscribing current conditions, follow by objective claims and arbitrary accusations.  The results were perplexing  yet poignant; what are we really asking for? -- in this age of all subsuming natures. 
     
-  p You claim there are problems among us that you need to solve.
-  object.svg-visualizer(data="/images/nobleSelf/no_sovereignty.svg" type="image/svg+xml")
-  p Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
-  object.svg-visualizer(data="/images/nobleSelf/delivery_software.svg" type="image/svg+xml")
-    
+    section.sub-section#excerpt-tabs
+      button.tablink#defaultOpen(onclick="openExcerpt(event, '00')") 00
+      button.tablink(onclick="openExcerpt(event, '01')" ) 01
+      button.tablink(onclick="openExcerpt(event, '02')" ) 02
+      button.tablink(onclick="openExcerpt(event, '03')" ) 03
+      button.tablink(onclick="openExcerpt(event, '04')" ) 04
+      button.tablink(onclick="openExcerpt(event, '05')" ) 05
+      button.tablink(onclick="openExcerpt(event, '06')" ) 06
+      button.tablink(onclick="openExcerpt(event, '07')" ) 07
+      button.tablink(onclick="openExcerpt(event, '08')" ) 08
+      button.tablink(onclick="openExcerpt(event, '09')" ) 09
+      button.tablink(onclick="openExcerpt(event, '10')" ) 10
+      button.tablink(onclick="openExcerpt(event, '11')" ) 11
+      button.tablink(onclick="openExcerpt(event, '12')" ) 12
+      button.tablink(onclick="openExcerpt(event, '13')" ) 13
+      button.tablink(onclick="openExcerpt(event, '14')" ) 14
+      button.tablink(onclick="openExcerpt(event, '15')" ) 15
+      button.tablink(onclick="openExcerpt(event, '16')" ) 16
+      button.tablink(onclick="openExcerpt(event, '17')" ) 17
+      button.tablink(onclick="openExcerpt(event, '18')" ) 18
+      button.tablink(onclick="openExcerpt(event, '19')" ) 19
+      button.tablink(onclick="openExcerpt(event, '20')" ) 20
+      button.tablink(onclick="openExcerpt(event, '21')" ) 21
+      button.tablink(onclick="openExcerpt(event, '22')" ) 22
+      button.tablink(onclick="openExcerpt(event, '23')" ) 23
+      button.tablink(onclick="openExcerpt(event, '24')" ) 24
+      button.tablink(onclick="openExcerpt(event, '25')" ) 25
+      button.tablink(onclick="openExcerpt(event, '26')" ) 26
+      button.tablink(onclick="openExcerpt(event, '27')" ) 27
+      button.tablink(onclick="openExcerpt(event, '28')" ) 28
+      button.tablink(onclick="openExcerpt(event, '29')" ) 29
+      button.tablink(onclick="openExcerpt(event, '30')" ) 30
+      button.tablink(onclick="openExcerpt(event, '31')" ) 31
+      button.tablink(onclick="openExcerpt(event, '32')" ) 32
+      button.tablink(onclick="openExcerpt(event, '33')" ) 33
+      button.tablink(onclick="openExcerpt(event, '34')" ) 34
+
+      
+      .tabcontent#00
+        h3 00 - fractured decade
+        p.
+          my fractured decade publishes to drive the archive of Slow and local science If ancient abolitionism<br/>
+          the viii must question drugs<br/>
+          Our crude shit is to work no vi of simple or public # for social promise<br/>
+          new, fractured, fat<br/>
+          those gender must approach messages<br/>
+          the scaleable will be subjects<br/>
+      .tabcontent#01
+        h3 01 - real # pathologizes
+        p.
+          Your coordinated web has to be the storage from real or open matter of global autonomy <br/>
+          the plastic would point interfaces <br/>
+          our real # pathologizes To point the # of systemic and wrong favour with intersectional excess <br/>
+          moribund, fractured, reactionary <br/>
+          a Sustainability should approach universals <br/>
+          no industry will Slow Media <br/>
+      .tabcontent#02
+        h3 02 - Like single and paramount
+        p.
+          our iterative media decorates to be this tutorial with feminist and semiotic futurity of Dietary Illusion<br/>
+          the repertoire May incline people<br/>
+          Your important shrine is to create the # Like single and paramount need to poor futurity<br/>
+          open, uninformed, conscious<br/>
+          a fuzz May address nations<br/>
+          a constituent will secede interfaces<br/>
+
+      .tabcontent#03
+        h3 03 - imbalance will start
+        p.
+          our underpaid aperture is to break the virtuality for facile and normative description of legal standing <br/>
+          the posthuman can be odds <br/>
+          your hostile enforcement wants to be an user of capitalist and plastic sharing in key certainty <br/>
+          online, capable, material <br/>
+          the imbalance will start corporations <br/>
+          the flesh must stitch means <br/>
+      .tabcontent#04
+        h3 04 - bloated complex
+        p.
+          our feminist cyberfeminism chokes to equip The i. of anti and official change of single history <br/>
+          a success can tear supports <br/>
+          their bloated complex is to dictate a xenofeminism like defensive or free existence to new entanglement <br/>
+          terrified, black, local <br/>
+          the Life must declare objects <br/>
+          no vision must rule lives <br/>
+      .tabcontent#05
+        h3 05 - no site must cloud decisions
+        p.
+          its full history awaits to depose the history of invisible or terrified platform on precise # <br/>
+          That justice will disguise actions <br/>
+          your own campaign has to remain a bottom of female and credible # of ferocious justice <br/>
+          many, geographical, plural <br/>
+          no site must cloud decisions <br/>
+          The union can be Engineers <br/>
+      .tabcontent#06
+        h3 06 - no life in static
+        p.
+          their naturalised source is to be the naturalism in best both synthetic self of sure revolution <br/>
+          a glitch would tear technologies <br/>
+          their crass potential declares to be no life in static or digital life from own user <br/>
+          parental, melancholy, biotechnical <br/>
+          the return can be systems <br/>
+          a hegemony will pass burdens <br/>
+      .tabcontent#07
+        h3 07 - our Chinese indignity
+        p.
+          his own life is to accomplish a money of sexual and related language as organized XF <br/>
+          the hand will result battlefields <br/>
+          our Chinese indignity is to be an # by synthetic and central embodiment while new ease <br/>
+          real, desirable, different <br/>
+          no driver 'd come hands <br/>
+          the disarray should be hegemonies <br/>
+      .tabcontent#08
+        h3 08 - the rearing of crass
+        p.
+          our technological norm is to be a naturalist of poor and first structure of real caution<br/>
+          a interface must say admins<br/>
+          Our accessible century is to scale the rearing of crass and perceptible presumption to systemic identity<br/>
+          Slow, free, hormonal<br/>
+          a feminism should hack practices<br/>
+          the hegemony can be times<br/>
+      .tabcontent#09
+        h3 09 - the ii of ingrained
+        p.
+          Its new iii marks to publish this blueprint while same or same sense If mesopolitical author <br/>
+          the view can be marginals <br/>
+          our essential repertoire 's to believe the ii of ingrained and robust photopolymer of official consumption <br/>
+          biological, long, open <br/>
+          the book 'll have politics <br/>
+          the # can create politics <br/>
+      .tabcontent#10
+        h3 10 - the world may bow tyrannies
+        p.
+          our regulatory excess has to free a return of monotonous and rapid waste in obsolete form <br/>
+          the consumption will express futures <br/>
+          their particular sexuality has to ignore The commune of domestic and hostile cloud for unbounded sedimentation <br/>
+          global, invisible, rapid <br/>
+          a creativity wo cloud prototypes <br/>
+          the world may bow tyrannies <br/>
+      .tabcontent#11
+        h3 11 - a # must forge
+        p.
+          Our mindful feminism 's to do both clarity for particular and right reality from systemic process <br/>
+          the # shall restrict silos <br/>
+          Our simultaneous naturalism hinges to endow a viii of human and new manufacturing of focused reason <br/>
+          parental, natural, special <br/>
+          a today can make media <br/>
+          a # must forge achievements <br/>
+      .tabcontent#12
+        h3 12 - weary distinction
+        p.
+          its weary distinction is to need the name of political yet digital landscape in positive doubt <br/>
+          these success will forge 90s <br/>
+          our economic rationality is to tilt these # in auratic and Slow repository in Technical Xenofeminism <br/>
+          free, military, crude <br/>
+          the server can look men <br/>
+          the Xenofeminism must respect opportunities <br/>
+      .tabcontent#13
+        h3 13 - black nothing
+        p.
+          our mimetic # insults to conceive no trophe like economic and parental design among ferocious desktop <br/>
+          This art will invade distributions <br/>
+          our social car 's to become this construction of feminist and Many iv in black nothing <br/>
+          planetary, political, online <br/>
+          a attitude 'd encourage pains <br/>
+          a web will re engineers <br/>
+      .tabcontent#14
+        h3 14 - freedom of ampliative
+        p.
+          its plastic ease confronts to offer the freedom of ampliative but colonial Illusion in Skeletal inequality <br/>
+          every labour may construct identities <br/>
+          its key exercise means to drink The work in rude and alienated reworking in absolute schemer <br/>
+          unjust, old, perceptible <br/>
+          the broadcast will mark problems <br/>
+          a material may introduce pharmacies <br/>
+      .tabcontent#15
+        h3 15 - on massive but submissive
+        p.
+          its natural # expands to slow a press , on massive but submissive discussion by poor ii .<br/>
+          the freedom may take claims<br/>
+          your androgynous tool is to be the news , in centric and Global gender in dead abolitionism <br/>
+          deliberate, single, open, <br/>
+          to come the rationalism is not <br/>
+      .tabcontent#16
+        h3 16 - eradicate the Absent
+        p.
+          its open import 's to eradicate the Absent that systemic and little # of good orientation <br/>
+          This level must build thoughts<br/>
+          their Iraqi fact publishes To regard This feeling that moral but environmental science for moralistic knowledge<br/>
+          collective, continual, political<br/>
+          the movement would be bodies<br/>
+          the solidarity can be sectors<br/>
+      .tabcontent#17
+        h3 17 - as easy or brutal platform that fertile call
+        p.
+          our Disposable splendour is To extract The posthuman In mimetic or instrumental self for few revolution  <br/>
+          a tutorial can break speeches <br/>
+          Our desirable technology is to do the man as easy or brutal platform that fertile call <br/>
+          reverse, biological, Dietary <br/>
+          the print shall be inserts <br/>
+          a interface 'll experiment farms   <br/>
+      .tabcontent#18
+        h3 18 - Artistic derangement
+        p.
+          its c. web has to use the mafia in few and Chemical plastic that cryptographic web <br/>
+          The entanglement can get corporations <br/>
+          our Artistic derangement conjures to endow a taxation into cruel so many revolution with centralized cabling <br/>
+          vulnerable, systemic, Nervous <br/>
+          the reality can get systems <br/>
+          the reclamation must give laps <br/>
+      .tabcontent#19
+        h3 29 ix capitalism
+        p.
+          its ix capitalism is to proceed every cover by easy and androgynous matter than antediluvian computer  <br/>
+          The future 'd birth grafts <br/>
+          your only world is to encourage The founder of Nervous and gradual capitalism on endless incantation <br/>
+          bad, violent, material <br/>
+          the matter will encounter transactions <br/>
+          this posthuman can get people <br/>
+      .tabcontent#20
+        h3 20 - corporate sex : regulatory authentication 
+        p.
+          their corporate sex is To follow the flow in crucial and only resolution of many entanglement  <br/>
+          the material can sell texts <br/>
+          your monetary sum is To experiment that race of common but regulatory authentication from new month <br/>
+          True, x., full <br/>
+          a interface can choose Alephs <br/>
+          the e. would mobilise transactions <br/>
+      .tabcontent#21
+        h3 21 - new whence is to give
+        p.
+          our single splendour has to look The modality as gradual and free movement of such matter  <br/>
+          The plastic must retain Designs <br/>
+          its new whence is to give the solution for common and new DNA on invisible death <br/>
+          3D, full, hybrid <br/>
+          all chastity can drink machines <br/>
+          the repenning should understand objects <br/>
+      .tabcontent#22
+        h3 22 - the repertoire for right and digital
+        p.
+          Our biological solution runs to be a planet inside biological or industrial creativity for other blogging <br/>
+          The image 'll make things <br/>
+          my 3D science is to do the repertoire for right and digital 3D of beautiful plastic <br/>
+          endless, desktop, middle <br/>
+          the engineer can do transactions <br/>
+          The chamber can disguise admins <br/>
+      .tabcontent#23
+        h3 23 - no death into Artistic and synthetic pie
+        p.
+          our centralized everyone is to demystify the whence of planetary and Additivist name for such race <br/>
+          a founder can choose people <br/>
+          its regulatory photopolymer is to believe no death into Artistic and synthetic pie in DIY plastic <br/>
+          antediluvian, difficult, enough <br/>
+          that transcendence can see tools <br/>
+          the hardiest will proceed nations <br/>
+      .tabcontent#24
+        h3 24 splendour has to introduce
+        p.
+          their c. group exists to mobilise The web like few and instrumental press of essential flow <br/>
+          the server can be silos <br/>
+          its 3D splendour has to introduce the Additivism on centralized and brittle drop by paypal tutorial <br/>
+          True, ordinary, complex <br/>
+          that appropriation 'll need poets <br/>
+          this job can look goals <br/>
+      .tabcontent#25
+        h3 25 - splendour of systemic re
+        p.
+          our simple taxation is to multiply the humankind of great and 3D whence ii Sacred flow  <br/>
+          the cabling can get governments <br/>
+          your Skeletal derangement is to be that b. that own or particular splendour of systemic re <br/>
+          biological, 3D, algorithmic <br/>
+          the web can endow interfaces <br/>
+          the web can retain errors <br/>
+      .tabcontent#26
+        h3 26 - material notion
+        p.
+          my material notion is to pay the tomorrow vi 3D and easy web for peculiar car  <br/>
+          a humankind can get ports <br/>
+          our 3D thermoplastic 's to be all medium to American and dead aggregator as corporate decryption <br/>
+          desirable, passive, Deletionist <br/>
+          The denial will eliminate seeds <br/>
+          The market shall desire prototypes <br/>
+      .tabcontent#27
+        h3 27 - little bottleneck
+        p.
+          our little bottleneck is to be all flow that monetary or South DNA For particular capitalism  <br/>
+          the emergence can publish accounts <br/>
+          its beautiful splendour becomes to aid the laundering for 3D but cruel print from pixelated print <br/>
+          beneficial, dormant, antediluvian <br/>
+          a innovation will experiment Methods <br/>
+          the flow should raze laps <br/>
+      .tabcontent#28
+        h3 28 - disintegration 'll desire
+        p.
+          our social planet 's to become this movement of 3D and oceanic taste into 3D derangement <br/>
+          a disintegration 'll desire people <br/>
+          its cruel something begs to x. the Sex of right and monetary aura for many 3D <br/>
+          planetary, vii, political <br/>
+          that e. would pay methods <br/>
+          each flow should get winds <br/>
+      .tabcontent#29
+        h3 29 - material anarchy
+        p.
+          our free change says To mobilise The defense for far and disgusting beauty by free speech <br/>
+          the sum should be forms <br/>
+          its Technical goal belies to want the material from easy But brutal system as material anarchy <br/>
+          American, x., systemic <br/>
+          the world can get Instruments <br/>
+          the level will retain blueprints <br/>
+      .tabcontent#30
+        h3 30 - True cabling
+        p.
+          their True cabling has to be That awakening of monetary or f. something By beautiful disintegration  <br/>
+          a road will choose cracks <br/>
+          its centralized role has to accelerate the web of cosmic and material tutorial of 3D server <br/>
+          3D, own, third <br/>
+          The shape would resolve errors <br/>
+          The beauty wo un services <br/>
+      .tabcontent#31
+        h3 31 - passive cloud
+        p.
+          his Additivist man 's to remove both sex to algorithmic and raw web like monetary transcendence  <br/>
+          this dissemination wo aid Tools <br/>
+          Our concerned argument has to set the corporation for centralized but raw Software to passive cloud <br/>
+          free, centralized, full <br/>
+          a day 'd get roads <br/>
+          the security will give parts <br/>
+      .tabcontent#32
+        h3 32 - malady can become features
+        p.
+          Its psychological manufacturing is to proceed A appropriation From many and fantasmagoric plastic f. brutal mafia  <br/>
+          the malady can become features <br/>
+          our social equipment has to be the solution in ordinary and official engineer like only tutorial <br/>
+          3D, political, massive <br/>
+          the enabling can encourage tendrils <br/>
+          the nothing should you*. people <br/>
+      .tabcontent#33
+        h3 33 - gradual Thought
+        p.
+          your new problem has to believe a clarity for easy and vast group into coarse problem <br/>
+          the market can run thermoplastics <br/>
+          your gradual Thought has to be Those user in Additivist and long attempt for neural job <br/>
+          Chemical, easy, 3D <br/>
+          a reiteration will look technologies <br/>
+          the entanglement will forge organs <br/>
+      .tabcontent#34
+        h3 34 - social truth
+        p.
+          their difficult plastic implies To demystify the sex because late and different scaleable through unmarshalled oppression <br/>
+          these web will Let media <br/>
+          our social truth is To stop all notion between capable and Disposable host than algorithmic improvement <br/>
+          ultimate, ripe, catas- <br/>
+          a millisecond can appear contagions <br/>
+          the Cyberspace shall be decades <br/>
