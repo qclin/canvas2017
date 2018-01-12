@@ -4,8 +4,11 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     link(rel='stylesheet', href='/styles/main.css')
     link(rel='stylesheet', href='/styles/project.css')
-  body#linebyline
+  body#impressions
     include ../partials/nav.pug
-    
-    
+    .adjust
+      button.left(onclick="changeSize(0)") -
+      button.right(onclick="changeSize(1)") +
     h1 Butt Prints go here 
+    object.svg-impressions(data="https://s3.amazonaws.com/2018-portfolio/buttprints.svg" type="image/svg+xml")
+      img(src="https://s3.amazonaws.com/2018-portfolio/buttprints.svg")
