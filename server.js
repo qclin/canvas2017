@@ -55,8 +55,8 @@ app.get('/projects/:project', function(req, res){
 	fs.readdir(imagePath, function(err, items) {
 			res.render(`projects/${name}`, {images: items, path: refPath});
 	});
-
-
 })
-app.listen(8080);
+app.listen(80);
+app.listen(443);
+
 console.log('Listening on port 80');
