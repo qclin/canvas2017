@@ -50,12 +50,8 @@ app.get('/webwork/:type', function(req, res){
 
 app.get('/projects/:project', function(req, res){
 	var name = req.params.project;
-	var imagePath = 'assets/images/'+name;
-	var refPath ='/images/'+name+'/';
-	fs.readdir(imagePath, function(err, items) {
-			res.render(`projects/${name}`, {images: items, path: refPath});
-	});
-})
+	res.render(`projects/${name}`);
+});
 app.listen(80);
 app.listen(443);
 
