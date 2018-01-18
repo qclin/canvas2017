@@ -19,8 +19,8 @@
 
 }
 h3.title{
-    margin-top: 3em;
     font-size: 24px;
+    margin-top: 0;
 }
 
 a h3.title:hover{
@@ -32,11 +32,15 @@ a{
 
 p.description{
   margin-top: 0;
-  max-width: 640px;
+  margin-right: 2em;
 }
 
 .project{
   position: relative;
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1em;
 }
 
 .reveal{
@@ -61,5 +65,49 @@ img.preview{
 #chicken{
   color: beige;
   text-shadow: 2px 1px #ff0000;
-  margin-top: 2em;
+}
+
+section.sub-section {
+  position: relative;
+}
+
+.title{
+  border: dashed #ffffff;
+  display: inline-block;
+  border-width: 0px 0 1px 0;
+  margin: 0 0 .5em 0;
+}
+.mmm{
+  border-bottom: double white;
+  position: absolute;
+  left: -4em;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+  top: 1em;
+}
+.mmm.long{
+  left: -5em;
+}
+.projects{
+  /* background: url('/images/preview/IMG_7432.JPG') no-repeat center center fixed; */
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
+ background-size: contain;
+}
+
+h1.sketch{
+  border: dashed #4176d0;
+  border-width: 0px 0 1px 0;
+  padding: 1em 0 .8em 0;
+  margin:.5em;
+  text-shadow: 2px 2px 4px #4176d0;
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+}
+.legible{
+  background: white;
+  border: 1px dashed #00F;
 }
