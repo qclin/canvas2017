@@ -628,8 +628,33 @@ ul.citation .caption{
 #impressions .adjust{
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
   text-align: center;
+}
+
+.adjust .up{
+  display: block;
+  margin: 0 auto;
+}
+
+.adjust .down{
+  display: block;
+  margin: 0 auto;
+}
+.adjust .left{
+  float: left;
+}
+.adjust .right{
+  float: right;
+}
+
+.one-row{
+  display: block;
 }
 
 
@@ -639,7 +664,6 @@ ul.citation .caption{
   border: none;
   background: transparent;
   color: gainsboro;
-  margin: 2em;
   cursor: pointer;
 }
 #tangible figure img{

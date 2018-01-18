@@ -7,12 +7,16 @@ html
   body#impressions
     include ../partials/nav.pug
     .adjust
-      button.left(onclick="changeSize(0)") -
-      button.right(onclick="changeSize(1)") +
-    h1 Butt Prints go here 
+      button.up(onclick=`move(event, 0)`) &#9650;
+      .one-row
+        button.left(onclick=`move(event, 1)`) &#9664;
+        button.right(onclick=`move(event, 2)`) &#9654;
+      button.down(onclick=`move(event, 3)`) &#9660;
+      
+    h1 Sedantary Prints 
     object.svg-impressions(data="https://s3.amazonaws.com/2018-portfolio/buttprints.svg" type="image/svg+xml")
       img(src="https://s3.amazonaws.com/2018-portfolio/buttprints.svg")
 
     
     script(src='http://code.jquery.com/jquery-1.10.2.min.js')
-    script(type='text/javascript', src='/scripts/noble_self.js')
+    script(type='text/javascript', src='/scripts/impressions.js')
