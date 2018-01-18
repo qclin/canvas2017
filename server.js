@@ -52,7 +52,7 @@ app.get('/projects/:project', function(req, res){
 	var name = req.params.project;
 	res.render(`projects/${name}`);
 });
-app.listen(80);
-app.listen(443);
+
+app.listen(8080);
 
 console.log('Listening on port 80');

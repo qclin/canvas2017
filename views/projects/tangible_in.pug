@@ -4,8 +4,103 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     link(rel='stylesheet', href='/styles/main.css')
     link(rel='stylesheet', href='/styles/project.css')
-  body#linebyline
+  body#tangible
     include ../partials/nav.pug
+    include ../partials/tangible_subNav.pug
+    section.main-page
+      h1.title Tangible Intangibles
+      -var dirCompiledSet = "https://s3.amazonaws.com/2018-portfolio/tangible_intangibles/compiled/jpg/AUDI-pr"
+      figure
+        img(src=dirCompiledSet+"1.jpg")
+        figcaption Atrium : Void Dis_Play  <br/>
+          | Auditorium : Audi_Proj <br/>
+      figure
+        img(src=dirCompiledSet+"2.jpg")
+        figcaption East-West Section & Time-lapsed Composite 
+      figure
+        img(src=dirCompiledSet+"3.jpg")
+        figcaption Void Dis_Play: Elevational archive of destallment
+      figure
+        img(src=dirCompiledSet+"4.jpg")
+        figcaption Audi_Proj: Perspective & Plan, Scenography Snapshots
+      figure
+        img(src=dirCompiledSet+"5.jpg")
+        figcaption Audi_Proj: Square Zone Axonometrics Overlay & Model Composite 
+      figure
+        img(src=dirCompiledSet+"6.jpg")
+        figcaption Audi_Proj: Elbow Room Reflection Resolution
+        
+    section.sub-page#Dis_Set-page
+      .tabs
+      each _, index in Array(13)
+        button.tablink(onclick=`openTab(event, 'Dis_Set', ${index})`) #{index}
+      a.closebtn(href="javascript:void(0)" onclick="closePage()") &times; 
+      -var dirAtriumSet = "https://s3.amazonaws.com/2018-portfolio/tangible_intangibles/construction_set/atrium/000_ATRIUM_Page_"
+      .tabcontent#Dis_Set0.active
+        img(src=dirAtriumSet+"01.jpg")
+      .tabcontent#Dis_Set1
+        img(src=dirAtriumSet+"02.jpg")
+      .tabcontent#Dis_Set2
+        img(src=dirAtriumSet+"03.jpg")
+      .tabcontent#Dis_Set3
+        img(src=dirAtriumSet+"04.jpg")
+      .tabcontent#Dis_Set4
+        img(src=dirAtriumSet+"05.jpg")
+      .tabcontent#Dis_Set5
+        img(src=dirAtriumSet+"06.jpg")
+      .tabcontent#Dis_Set6
+        img(src=dirAtriumSet+"07.jpg")
+      .tabcontent#Dis_Set7
+        img(src=dirAtriumSet+"08.jpg")
+      .tabcontent#Dis_Set8
+        img(src=dirAtriumSet+"09.jpg")
+      .tabcontent#Dis_Set9
+        img(src=dirAtriumSet+"10.jpg")
+      .tabcontent#Dis_Set10
+        img(src=dirAtriumSet+"11.jpg")
+      .tabcontent#Dis_Set11
+        img(src=dirAtriumSet+"12.jpg")
+      .tabcontent#Dis_Set12
+        img(src=dirAtriumSet+"13.jpg")
+    section.sub-page#Dis_Footage-page
+    section.sub-page#Proj_Set-page
+      .tabs
+      each _, index in Array(15)
+        button.tablink(onclick=`openTab(event, 'Proj_Set', ${index})`) #{index}
+      a.closebtn(href="javascript:void(0)" onclick="closePage()") &times; 
+      - var dirAudiSet ="https://s3.amazonaws.com/2018-portfolio/tangible_intangibles/construction_set/auditorium/AUDI-PROJ_Page_"
+      .tabcontent#Proj_Set0.active
+        img(src="https://s3.amazonaws.com/2018-portfolio/tangible_intangibles/construction_set/auditorium/AUDI_AXON001.jpg")
+      .tabcontent#Proj_Set1
+        img(src=dirAudiSet+"01.jpg")
+      .tabcontent#Proj_Set2
+        img(src=dirAudiSet+"02.jpg")
+      .tabcontent#Proj_Set3
+        img(src=dirAudiSet+"03.jpg")
+      .tabcontent#Proj_Set4
+        img(src=dirAudiSet+"04.jpg")
+      .tabcontent#Proj_Set5
+        img(src=dirAudiSet+"05.jpg")
+      .tabcontent#Proj_Set6
+        img(src=dirAudiSet+"06.jpg")
+      .tabcontent#Proj_Set7
+        img(src=dirAudiSet+"07.jpg")
+      .tabcontent#Proj_Set8
+        img(src=dirAudiSet+"08.jpg")
+      .tabcontent#Proj_Set9
+        img(src=dirAudiSet+"09.jpg")
+      .tabcontent#Proj_Set10
+        img(src=dirAudiSet+"10.jpg")
+      .tabcontent#Proj_Set11
+        img(src=dirAudiSet+"11.jpg")
+      .tabcontent#Proj_Set12
+        img(src=dirAudiSet+"12.jpg")
+      .tabcontent#Proj_Set13
+        img(src=dirAudiSet+"13.jpg")
+      .tabcontent#Proj_Set14
+        img(src=dirAudiSet+"14.jpg")
+    section.sub-page#Proj_Footaget-page
     
-    
-    h1 Tangible Intangibles
+                  
+    script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+    script(type='text/javascript', src='/scripts/tangible_in.js')
