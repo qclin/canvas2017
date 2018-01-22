@@ -22,7 +22,9 @@ h3.title{
     font-size: 24px;
     margin-top: 0;
 }
-
+.clickable h3{
+  color: #00F;
+}
 a h3.title:hover{
   text-decoration: underline;
 }
@@ -62,11 +64,33 @@ img.preview{
   text-decoration: line-through;
 }
 
-#chicken{
-  color: beige;
-  text-shadow: 2px 1px #ff0000;
+#nobleSelf{
+  color: #FFF;
+  /* color: #ffc966; */
+  text-shadow: 2px 2px 2px #f65026;
 }
 
+#cck{
+  /* color: #dee0f1; */
+  color: #fff;
+  text-shadow: 2px 2px 2px #663366;
+}
+#chicken{
+  /* color: #FFD700; */
+  color: #fff;
+  text-shadow: 2px 2px 2px #32ad6f;
+}
+#impressions{
+  /* color: #bcbcbc; */
+  color: #fff;
+  text-shadow: 2px 2px 2px #0593ff;
+}
+
+#tangibles{
+  /* color: #ff828e; */
+  color: #fff;
+  text-shadow: 2px 2px 2px #ff828e;
+}
 section.sub-section {
   position: relative;
 }
@@ -76,6 +100,7 @@ section.sub-section {
   display: inline-block;
   border-width: 0px 0 1px 0;
   margin: 0 0 .5em 0;
+  color: #666;
 }
 .mmm{
   border-bottom: double white;

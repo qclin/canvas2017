@@ -43,6 +43,22 @@ body#tangible figure{
   color: #333333;
   border-bottom: double #FFF;
 }
+
+#homeSlice .project-content img{
+  max-width: 80%;
+}
+
+#play{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 80px;
+  color: #ffe200;
+  margin: 1em;
+}
+#play:hover{
+  text-shadow: 2px 2px 4px #3A5F0B;
+}
 .project-content{
   margin: 2em;
 }

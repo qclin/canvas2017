@@ -1,0 +1,29 @@
+doctype html 
+html 
+  head 
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet', href='/styles/main.css')
+    link(rel='stylesheet', href='/styles/project.css')
+  body
+    include ../partials/nav.pug
+    section.project-content
+      h1.title Feelz io
+      p.description A Simulation forecast of local emotional weather.  Choreography of robots with various geo-location positions posting emotionally charged tweets are processed via IBM Watson's Intelligence API for sentiment analysis. A test case for social application in rendering a heatmap of where people are pissed off or happy. Positive is sunny yellow, Negative is gloomy blues, tweets are fabricated under the influences newsfeed of minute happenings within the neighborhood. 
+      section.code-sample
+        div.link 
+          a(href="https://github.com/sleepylemur/feelz/blob/master/lib/robotusers.js" target="_blank") [source code]
+      section.sub-section
+        h3.underscore 
+        .composites
+          img(src="/images/feelz/avatars.png")
+          .caption Avatars, for users as anonymous as a figure of representation. 
+        .composites
+          img(src="/images/feelz/logos.jpg")
+          .caption Logo, a good startup pitch starts with a the symbolic icon.
+        div.embed-container.box
+          iframe(src="https://player.vimeo.com/video/134579432" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
+
+
+            
+
+      
