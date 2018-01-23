@@ -1,0 +1,31 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .quote{
+    display: none;
+  }
+
+  section.projects{
+    margin: 0;
+  }
+  h1.sketch{
+    font-size: 1.5em;
+  }
+
+  p{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  h3.title{
+    font-size: 1.2em;
+  }
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+
+}

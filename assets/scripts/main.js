@@ -5,18 +5,17 @@ $(document).ready(function(){
 
     var dataImageUrl = $(this).data('key');
 
-    if(  $(this).parent().is('a')){
-        $(this).parent().parent().toggleClass('legible');
+    if($(this).parent().is('a')){
+        $(this).parent().parent().addClass('legible');
     }else{
-        $(this).parent().toggleClass('legible');
+        $(this).parent().addClass('legible');
     }
 
     $('.projects').eq(0).css({'background':`url(${dataImageUrl}) no-repeat center center fixed`, 'background-size': 'contain'});
-    // $('.reveal').toggleClass('reveal');
-    // $(this).find('img').addClass('reveal');
   });
 
-  $('.project h3').mouseout(function(){
+  $('.project').mouseleave(function(){
     $('.projects').eq(0).css({'background': ''});
+    $(this).removeClass('legible');
   });
 });

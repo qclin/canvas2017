@@ -7,13 +7,23 @@ nav {
     top: 0; /* Stay at the top */
     left: 0;
     /*background-color: #dee0f1;*/
-    background-image: linear-gradient( to right, rgba(255, 255, 255, .2) 0px,  #deeaf1 50px, rgba(255, 255, 255, .95) 50%, #deeaf1 100% );
+    background-image: linear-gradient( to right, rgba(100, 100, 100, .2) 0px,  #fff 50px, rgba(255, 255, 255, .95) 90%, rgba(0, 0, 255, .05) 100% );
+
+
+    /* #4176d0  */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     transition: 0.5s;
+
+    box-shadow: 2px 2px 5px rgba(100, 100, 100, .2);
 }
 ul{
   list-style: decimal-leading-zero;
+}
+
+
+li::before {
+  color: #fff; /* or whatever color you prefer */
 }
 .logo{
   position: absolute;

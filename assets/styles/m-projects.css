@@ -1,0 +1,49 @@
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+  .pair{
+    width: 100%;
+    text-align: left;
+  }
+  #qwerty .pair{
+    width: 90%
+  }
+
+  .fixNav{
+    display: none;
+  }
+
+  p{
+    width: 100%;
+    font-size: 12px;
+  }
+
+
+  .project-content{
+    margin: 2em .5em;
+  }
+
+  body{
+    width: inherit;
+  }
+
+  .composites{
+    width: 90%;
+    margin: .5em;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  .pair{
+    width: 45%;
+    text-align: left;
+  }
+  #qwerty .pair{
+    width: 40%
+  }
+
+}

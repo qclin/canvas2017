@@ -40,6 +40,7 @@ p.description{
 .project{
   position: relative;
   width: 30%;
+  min-width: 300px;
   display: inline-block;
   vertical-align: top;
   padding: 1em;
@@ -125,14 +126,23 @@ section.sub-section {
 h1.sketch{
   border: dashed #4176d0;
   border-width: 0px 0 1px 0;
-  padding: 1em 0 .8em 0;
   margin:.5em;
   text-shadow: 2px 2px 4px #4176d0;
-  font-size: 30px;
   font-style: italic;
   color: white;
+  padding: 1em 0 .8em 0;
+
 }
 .legible{
   background: white;
   border: 1px dashed #00F;
+}
+
+
+
+@media only screen and (min-device-width : 1024px) {
+  h1.sketch{
+    font-size: 30px;
+  }
+
 }

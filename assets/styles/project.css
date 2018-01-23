@@ -1,11 +1,11 @@
 body{
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 
 }
 
 body#cck, body#noble-self{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body#cck{
   background-color: #dee0f1;
@@ -92,8 +92,6 @@ body#tangible figure{
   border: dashed #ffffff;
   display: inline-block;
   border-width: 0px 0 1px 0;
-  padding: 1em 0 .8em 0;
-  margin: 0 0 .5em 0;
 }
 
 
@@ -158,11 +156,7 @@ a.page-link{
   margin-top: 2em;
   text-shadow: 2px 2px 4px #f65026;
 }
-p{
-  line-height: 1.2em;
-  max-width: 640px;
-  width: 80%;
-}
+
 
 .info-headline{
 
@@ -203,14 +197,6 @@ code.block{
   border-bottom: none;
 }
 
-
-section.animations, section.music, section.lyrics section.body-chamber {
-  margin: 5em 0 ;
-}
-
-section.sub-section{
-  margin: 1em 3em;
-}
 .pair{
   display: inline-block;
   width: 33%;
@@ -684,7 +670,6 @@ ul.citation .caption{
 }
 #tangible figure img{
   width: 100%;
-  margin-top: 5em;
 }
 #tangible figcaption{
   font-style: italic;
@@ -696,4 +681,25 @@ ul.citation .caption{
 }
 .adjust button.right{
   right: 0;
+}
+
+@media only screen and (min-device-width : 1024px) {
+
+  p{
+    line-height: 1.2em;
+    max-width: 640px;
+    width: 80%;
+  }
+
+  #tangible figure img{
+    margin-top: 5em;
+  }
+
+  section.animations, section.music, section.lyrics section.body-chamber {
+    margin: 5em 0 ;
+  }
+
+  section.sub-section{
+    margin: 1em 3em;
+  }
 }

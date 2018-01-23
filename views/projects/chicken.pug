@@ -4,7 +4,9 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     link(rel='stylesheet', href='/styles/main.css')
     link(rel='stylesheet', href='/styles/project.css')
-  body
+    link(rel='stylesheet', href='/styles/m-projects.css')
+
+  body#chicken
     include ../partials/nav.pug
     section.project-content
       h1.title Over the Air Chicken Soup 
@@ -17,7 +19,8 @@ html
         .composites
           img(src="/images/chicken/lighter.png")
           .caption Chicken Soup 
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/czGn3TnFP1s" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
+        div.embed-container.box
+          iframe(src="https://www.youtube.com/embed/czGn3TnFP1s" frameborder="0" gesture="media" allowfullscreen)
       section.code-sample
         h3 A Series of Scripts 
         div.link 
