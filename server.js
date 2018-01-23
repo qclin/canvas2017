@@ -42,9 +42,9 @@ app.get('/word1', function(req, res){
 	res.render('scenes/first.jade');
 });
 
-app.get('/webwork/:type', function(req, res){
+app.get('/works', function(req, res){
 	var type = req.params.type;
-	res.render('work/dashboard.jade');
+	res.render('works.pug');
 });
 
 

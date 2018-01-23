@@ -1,0 +1,31 @@
+
+p.description{
+  font-family: "FranziskaWeb-MediumItalic";
+  color: #44494C;
+}
+
+h3.title{
+  font-family: 'Inconsolata', monospace;
+}
+
+
+.inline{
+  display: inline;
+}
+
+table{
+  /* font-size: 11px; */
+  font-family: 'Inconsolata', monospace;
+}
+
+th, td{
+  padding: 0 10px;
+}
+
+td:first-of-type{
+  font-weight: bold;
+}
+
+td{
+  /* line-height: 1.2em; */
+}
