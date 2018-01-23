@@ -8,11 +8,13 @@ h3.title{
   font-family: 'Inconsolata', monospace;
 }
 
+h3.title span{
+  font-size: 17px;
+  text-decoration: none;
+  padding-left: 12px;
+  font-style: italic;
 
-.inline{
-  display: inline;
 }
-
 table{
   /* font-size: 11px; */
   font-family: 'Inconsolata', monospace;
@@ -28,4 +30,22 @@ td:first-of-type{
 
 td{
   /* line-height: 1.2em; */
+}
+
+.selected{
+  margin-top: 1em;
+  border-bottom: double #00F;
+}
+
+.container{
+  margin-top: 3em;
+}
+
+
+.info p{
+  margin-bottom: 1em;
+}
+
+.info span{
+  font-weight: bold;
 }
